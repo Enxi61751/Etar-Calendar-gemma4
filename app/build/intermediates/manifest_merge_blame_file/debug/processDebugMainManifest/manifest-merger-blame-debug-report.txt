@@ -1,0 +1,766 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<!--
+3/* //device/apps/Calendar/AndroidManifest.xml
+4**
+5** Copyright 2006, The Android Open Source Project
+6**
+7** Licensed under the Apache License, Version 2.0 (the "License");
+8** you may not use this file except in compliance with the License.
+9** You may obtain a copy of the License at
+10**
+11**     http://www.apache.org/licenses/LICENSE-2.0
+12**
+13** Unless required by applicable law or agreed to in writing, software
+14** distributed under the License is distributed on an "AS IS" BASIS,
+15** WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+16** See the License for the specific language governing permissions and
+17** limitations under the License.
+18*/
+19-->
+20<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+21    package="ws.xsoh.etar.debug"
+22    android:installLocation="auto"
+23    android:versionCode="52"
+24    android:versionName="1.0.52" >
+25
+26    <uses-sdk
+27        android:minSdkVersion="23"
+28        android:targetSdkVersion="35" />
+29
+30    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+30-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:23:5-81
+30-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:23:22-78
+31    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+31-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:24:5-71
+31-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:24:22-68
+32    <uses-permission android:name="android.permission.VIBRATE" />
+32-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:25:5-65
+32-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:25:22-63
+33    <uses-permission android:name="android.permission.READ_CONTACTS" />
+33-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:26:5-71
+33-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:26:22-69
+34    <uses-permission android:name="android.permission.READ_CALENDAR" />
+34-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:27:5-72
+34-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:27:22-69
+35    <uses-permission android:name="android.permission.WRITE_CALENDAR" />
+35-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:28:5-73
+35-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:28:22-70
+36    <uses-permission android:name="android.permission.WAKE_LOCK" />
+36-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:29:5-68
+36-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:29:22-65
+37    <uses-permission android:name="android.permission.READ_SYNC_SETTINGS" />
+37-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:30:5-77
+37-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:30:22-74
+38    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+38-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:31:5-77
+38-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:31:22-74
+39    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_SYSTEM_EXEMPTED" />
+39-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:32:5-93
+39-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:32:22-90
+40    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
+40-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:33:5-79
+40-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:33:22-76
+41    <uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS" />
+41-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:34:5-94
+41-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:34:22-92
+42    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+42-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:35:5-76
+42-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:35:22-74
+43    <uses-permission android:name="android.permission.INTERNET" />
+43-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:36:5-67
+43-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:36:22-64
+44
+45    <queries>
+45-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:39:5-55:15
+46        <intent>
+46-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:40:9-42:18
+47            <action android:name="android.content.SyncAdapter" />
+47-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:41:13-66
+47-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:41:21-63
+48        </intent>
+49        <intent>
+49-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:44:9-48:18
+50            <action android:name="android.intent.action.VIEW" />
+50-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:45:13-65
+50-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:45:21-62
+51
+52            <category android:name="android.intent.category.BROWSABLE" />
+52-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:46:13-74
+52-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:46:23-71
+53
+54            <data android:scheme="http" />
+54-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:47:13-43
+54-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:47:19-40
+55        </intent>
+56        <intent>
+56-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:50:9-54:18
+57            <action android:name="android.intent.action.VIEW" />
+57-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:45:13-65
+57-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:45:21-62
+58
+59            <category android:name="android.intent.category.BROWSABLE" />
+59-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:46:13-74
+59-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:46:23-71
+60
+61            <data android:scheme="https" />
+61-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:47:13-43
+61-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:47:19-40
+62        </intent>
+63
+64        <package android:name="androidx.test.orchestrator" />
+64-->[androidx.test:runner:1.7.0] C:\Users\86137\.gradle\caches\transforms-4\336228aacab96557f9b50cd1fa1fcffe\transformed\runner-1.7.0\AndroidManifest.xml:25:9-62
+64-->[androidx.test:runner:1.7.0] C:\Users\86137\.gradle\caches\transforms-4\336228aacab96557f9b50cd1fa1fcffe\transformed\runner-1.7.0\AndroidManifest.xml:25:18-59
+65        <package android:name="androidx.test.services" />
+65-->[androidx.test:runner:1.7.0] C:\Users\86137\.gradle\caches\transforms-4\336228aacab96557f9b50cd1fa1fcffe\transformed\runner-1.7.0\AndroidManifest.xml:26:9-58
+65-->[androidx.test:runner:1.7.0] C:\Users\86137\.gradle\caches\transforms-4\336228aacab96557f9b50cd1fa1fcffe\transformed\runner-1.7.0\AndroidManifest.xml:26:18-55
+66        <package android:name="com.google.android.apps.common.testing.services" />
+66-->[androidx.test:runner:1.7.0] C:\Users\86137\.gradle\caches\transforms-4\336228aacab96557f9b50cd1fa1fcffe\transformed\runner-1.7.0\AndroidManifest.xml:27:9-83
+66-->[androidx.test:runner:1.7.0] C:\Users\86137\.gradle\caches\transforms-4\336228aacab96557f9b50cd1fa1fcffe\transformed\runner-1.7.0\AndroidManifest.xml:27:18-80
+67    </queries>
+68
+69    <permission
+69-->[androidx.core:core:1.13.1] C:\Users\86137\.gradle\caches\transforms-4\30cf0bd4f0d2fb592315ffff5daa984a\transformed\core-1.13.1\AndroidManifest.xml:22:5-24:47
+70        android:name="ws.xsoh.etar.debug.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+70-->[androidx.core:core:1.13.1] C:\Users\86137\.gradle\caches\transforms-4\30cf0bd4f0d2fb592315ffff5daa984a\transformed\core-1.13.1\AndroidManifest.xml:23:9-81
+71        android:protectionLevel="signature" />
+71-->[androidx.core:core:1.13.1] C:\Users\86137\.gradle\caches\transforms-4\30cf0bd4f0d2fb592315ffff5daa984a\transformed\core-1.13.1\AndroidManifest.xml:24:9-44
+72
+73    <uses-permission android:name="ws.xsoh.etar.debug.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+73-->[androidx.core:core:1.13.1] C:\Users\86137\.gradle\caches\transforms-4\30cf0bd4f0d2fb592315ffff5daa984a\transformed\core-1.13.1\AndroidManifest.xml:26:5-97
+73-->[androidx.core:core:1.13.1] C:\Users\86137\.gradle\caches\transforms-4\30cf0bd4f0d2fb592315ffff5daa984a\transformed\core-1.13.1\AndroidManifest.xml:26:22-94
+74
+75    <application
+75-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:57:5-315:19
+76        android:name="com.android.calendar.CalendarApplication"
+76-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:57:18-73
+77        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+77-->[androidx.core:core:1.13.1] C:\Users\86137\.gradle\caches\transforms-4\30cf0bd4f0d2fb592315ffff5daa984a\transformed\core-1.13.1\AndroidManifest.xml:28:18-86
+78        android:debuggable="true"
+79        android:extractNativeLibs="false"
+80        android:hardwareAccelerated="true"
+80-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:59:9-43
+81        android:icon="@mipmap/ic_launcher"
+81-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:60:9-43
+82        android:label="@string/standalone_app_label"
+82-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:61:9-53
+83        android:localeConfig="@xml/_generated_res_locale_config"
+84        android:requestLegacyExternalStorage="true"
+84-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:58:9-52
+85        android:requiredAccountType="*"
+85-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:63:9-40
+86        android:taskAffinity="ws.xsoh.etar.task"
+86-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:62:9-49
+87        android:testOnly="true"
+88        android:theme="@style/Theme.Etar"
+88-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:65:9-42
+89        android:usesCleartextTraffic="false" >
+89-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:64:9-45
+90        <activity
+90-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:67:9-89:20
+91            android:name="com.android.calendar.AllInOneActivity"
+91-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:68:13-65
+92            android:exported="true"
+92-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:69:13-36
+93            android:launchMode="singleTask"
+93-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:70:13-44
+94            android:windowSoftInputMode="adjustPan" >
+94-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:71:13-52
+95            <intent-filter>
+95-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:72:13-77:29
+96                <action android:name="android.intent.action.MAIN" />
+96-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:73:17-69
+96-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:73:25-66
+97
+98                <category android:name="android.intent.category.DEFAULT" />
+98-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:74:17-76
+98-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:74:27-73
+99                <category android:name="android.intent.category.LAUNCHER" />
+99-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:75:17-77
+99-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:75:27-74
+100                <category android:name="android.intent.category.APP_CALENDAR" />
+100-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:76:17-81
+100-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:76:27-78
+101            </intent-filter>
+102            <intent-filter>
+102-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:78:13-84:29
+103                <action android:name="android.intent.action.VIEW" />
+103-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:45:13-65
+103-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:45:21-62
+104
+105                <category android:name="android.intent.category.DEFAULT" />
+105-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:74:17-76
+105-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:74:27-73
+106
+107                <data android:mimeType="time/epoch" />
+107-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:47:13-43
+107-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:81:23-52
+108                <data android:host="com.android.calendar" />
+108-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:47:13-43
+108-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:82:23-58
+109                <data android:scheme="content" />
+109-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:47:13-43
+109-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:47:19-40
+110            </intent-filter>
+111
+112            <meta-data
+112-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:86:13-87:53
+113                android:name="android.app.shortcuts"
+113-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:86:24-60
+114                android:resource="@xml/shortcuts" />
+114-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:87:17-50
+115        </activity>
+116
+117        <activity-alias
+117-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:91:9-94:26
+118            android:name="com.android.calendar.LaunchActivity"
+118-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:91:25-75
+119            android:exported="true"
+119-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:92:13-36
+120            android:targetActivity="com.android.calendar.AllInOneActivity" >
+120-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:93:13-75
+121        </activity-alias>
+122
+123        <activity android:name="com.android.calendar.AboutActivity" >
+123-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:96:9-97:20
+123-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:96:19-68
+124        </activity>
+125        <activity
+125-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:99:9-111:20
+126            android:name="com.android.calendar.EventInfoActivity"
+126-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:99:19-72
+127            android:exported="true"
+127-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:100:13-36
+128            android:parentActivityName="com.android.calendar.AllInOneActivity" >
+128-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:101:13-79
+129            <intent-filter>
+129-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:102:13-105:29
+130                <action android:name="android.intent.action.VIEW" />
+130-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:45:13-65
+130-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:45:21-62
+131
+132                <category android:name="android.intent.category.DEFAULT" />
+132-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:74:17-76
+132-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:74:27-73
+133            </intent-filter>
+134            <intent-filter>
+134-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:106:13-110:29
+135                <action android:name="android.intent.action.VIEW" />
+135-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:45:13-65
+135-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:45:21-62
+136
+137                <category android:name="android.intent.category.DEFAULT" />
+137-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:74:17-76
+137-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:74:27-73
+138
+139                <data android:mimeType="vnd.android.cursor.item/event" />
+139-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:47:13-43
+139-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:81:23-52
+140            </intent-filter>
+141        </activity>
+142        <activity
+142-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:113:9-115:20
+143            android:name="com.android.calendar.event.EditEventActivity"
+143-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:113:19-78
+144            android:configChanges="keyboardHidden|orientation|screenSize" >
+144-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:114:13-74
+145        </activity>
+146
+147        <activity-alias
+147-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:117:9-132:26
+148            android:name="com.android.calendar.EditEventActivity"
+148-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:117:25-78
+149            android:exported="true"
+149-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:118:13-36
+150            android:targetActivity="com.android.calendar.event.EditEventActivity" >
+150-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:119:13-82
+151            <intent-filter>
+151-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:120:13-125:29
+152                <action android:name="android.intent.action.EDIT" />
+152-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:121:17-69
+152-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:121:25-66
+153                <action android:name="android.intent.action.INSERT" />
+153-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:122:17-71
+153-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:122:25-68
+154
+155                <category android:name="android.intent.category.DEFAULT" />
+155-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:74:17-76
+155-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:74:27-73
+156
+157                <data android:mimeType="vnd.android.cursor.item/event" />
+157-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:47:13-43
+157-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:81:23-52
+158            </intent-filter>
+159            <intent-filter>
+159-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:126:13-131:29
+160                <action android:name="android.intent.action.EDIT" />
+160-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:121:17-69
+160-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:121:25-66
+161                <action android:name="android.intent.action.INSERT" />
+161-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:122:17-71
+161-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:122:25-68
+162
+163                <category android:name="android.intent.category.DEFAULT" />
+163-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:74:17-76
+163-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:74:27-73
+164
+165                <data android:mimeType="vnd.android.cursor.dir/event" />
+165-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:47:13-43
+165-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:81:23-52
+166            </intent-filter>
+167        </activity-alias>
+168
+169        <activity
+169-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:134:9-164:20
+170            android:name="com.android.calendar.GoogleCalendarUriIntentFilter"
+170-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:135:13-78
+171            android:configChanges="orientation|keyboardHidden"
+171-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:137:13-63
+172            android:exported="true"
+172-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:136:13-36
+173            android:label="@string/app_label"
+173-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:138:13-46
+174            android:theme="@android:style/Theme.NoDisplay" >
+174-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:139:13-59
+175            <intent-filter android:priority="50" >
+175-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:141:13-163:29
+175-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:142:16-37
+176                <action android:name="android.intent.action.VIEW" />
+176-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:45:13-65
+176-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:45:21-62
+177
+178                <category android:name="android.intent.category.DEFAULT" />
+178-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:74:17-76
+178-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:74:27-73
+179                <category android:name="android.intent.category.BROWSABLE" />
+179-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:46:13-74
+179-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:46:23-71
+180
+181                <data
+181-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:47:13-43
+182                    android:host="www.google.com"
+182-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:82:23-58
+183                    android:pathPrefix="/calendar/event"
+183-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:149:21-57
+184                    android:scheme="http" />
+184-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:47:19-40
+185                <data
+185-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:47:13-43
+186                    android:host="www.google.com"
+186-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:82:23-58
+187                    android:pathPrefix="/calendar/event"
+187-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:149:21-57
+188                    android:scheme="https" />
+188-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:47:19-40
+189                <data
+189-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:47:13-43
+190                    android:host="www.google.com"
+190-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:82:23-58
+191                    android:pathPattern="/calendar/hosted/.*/event"
+191-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:157:21-68
+192                    android:scheme="http" />
+192-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:47:19-40
+193                <data
+193-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:47:13-43
+194                    android:host="www.google.com"
+194-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:82:23-58
+195                    android:pathPattern="/calendar/hosted/.*/event"
+195-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:157:21-68
+196                    android:scheme="https" />
+196-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:47:19-40
+197            </intent-filter>
+198        </activity>
+199        <activity
+199-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:166:9-169:82
+200            android:name="com.android.calendar.settings.SettingsActivity"
+200-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:167:13-74
+201            android:label="@string/preferences_title"
+201-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:168:13-54
+202            android:parentActivityName="com.android.calendar.AllInOneActivity" />
+202-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:169:13-79
+203
+204        <!-- Declarations for search -->
+205        <!-- Make all activities a searchable context -->
+206        <meta-data
+206-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:173:9-174:66
+207            android:name="android.app.default_searchable"
+207-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:173:20-65
+208            android:value="com.android.calendar.SearchActivity" />
+208-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:174:13-64
+209
+210        <activity
+210-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:176:9-186:20
+211            android:name="com.android.calendar.SearchActivity"
+211-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:177:13-63
+212            android:exported="true"
+212-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:178:13-36
+213            android:label="@string/search_title"
+213-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:179:13-49
+214            android:launchMode="singleTop"
+214-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:180:13-43
+215            android:windowSoftInputMode="stateAlwaysHidden" >
+215-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:181:13-60
+216            <intent-filter>
+216-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:182:13-184:29
+217                <action android:name="android.intent.action.SEARCH" />
+217-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:183:17-70
+217-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:183:25-68
+218            </intent-filter>
+219
+220            <meta-data
+220-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:185:13-98
+221                android:name="android.app.searchable"
+221-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:185:24-61
+222                android:resource="@xml/searchable" />
+222-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:185:62-96
+223        </activity>
+224        <activity
+224-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:188:9-201:20
+225            android:name="com.android.calendar.ImportActivity"
+225-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:188:19-69
+226            android:exported="true"
+226-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:189:13-36
+227            android:launchMode="singleTop"
+227-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:191:13-43
+228            android:theme="@android:style/Theme.NoDisplay" >
+228-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:190:13-59
+229            <intent-filter>
+229-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:192:14-200:29
+230                <action android:name="android.intent.action.VIEW" />
+230-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:45:13-65
+230-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:45:21-62
+231
+232                <category android:name="android.intent.category.DEFAULT" />
+232-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:74:17-76
+232-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:74:27-73
+233
+234                <data android:scheme="content" />
+234-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:47:13-43
+234-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:47:19-40
+235                <data android:scheme="file" />
+235-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:47:13-43
+235-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:47:19-40
+236                <data android:mimeType="text/x-vcalendar" />
+236-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:47:13-43
+236-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:81:23-52
+237                <data android:mimeType="text/calendar" />
+237-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:47:13-43
+237-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:81:23-52
+238                <data android:mimeType="application/ics" />
+238-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:47:13-43
+238-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:81:23-52
+239            </intent-filter>
+240        </activity>
+241
+242        <provider
+243            android:name="androidx.core.content.FileProvider"
+243-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:204:13-62
+244            android:authorities="ws.xsoh.etar.debug.provider"
+244-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:205:13-60
+245            android:exported="false"
+245-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:206:13-37
+246            android:grantUriPermissions="true" >
+246-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:207:13-47
+247            <meta-data
+247-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:208:13-210:57
+248                android:name="android.support.FILE_PROVIDER_PATHS"
+248-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:209:17-67
+249                android:resource="@xml/provider_paths" />
+249-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:210:17-55
+250        </provider>
+251        <provider
+252            android:name="com.android.calendar.CalendarRecentSuggestionsProvider"
+252-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:213:19-88
+253            android:authorities="ws.xsoh.etar.debug.CalendarRecentSuggestionsProvider"
+253-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:215:13-85
+254            android:exported="false" />
+254-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:214:13-37
+255
+256        <!-- Declarations for alerts/reminders -->
+257        <activity
+257-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:218:9-222:64
+258            android:name="com.android.calendar.alerts.AlertActivity"
+258-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:219:13-69
+259            android:excludeFromRecents="true"
+259-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:220:13-46
+260            android:launchMode="singleInstance"
+260-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:221:13-48
+261            android:theme="@android:style/Theme.Holo.Dialog" />
+261-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:222:13-61
+262        <activity
+262-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:224:9-229:64
+263            android:name="com.android.calendar.alerts.QuickResponseActivity"
+263-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:225:13-77
+264            android:excludeFromRecents="true"
+264-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:226:13-46
+265            android:label="@string/quick_response_dialog_title"
+265-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:227:13-64
+266            android:launchMode="singleInstance"
+266-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:228:13-48
+267            android:theme="@android:style/Theme.Holo.Dialog" />
+267-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:229:13-61
+268        <activity
+268-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:231:9-235:64
+269            android:name="com.android.calendar.alerts.SnoozeDelayActivity"
+269-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:232:13-75
+270            android:excludeFromRecents="true"
+270-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:233:13-46
+271            android:launchMode="singleInstance"
+271-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:234:13-48
+272            android:theme="@android:style/Theme.Holo.Dialog" />
+272-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:235:13-61
+273
+274        <receiver
+274-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:237:9-252:20
+275            android:name="com.android.calendar.alerts.AlertReceiver"
+275-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:237:19-75
+276            android:exported="true" >
+276-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:238:13-36
+277            <intent-filter>
+277-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:239:13-243:29
+278                <action android:name="android.intent.action.EVENT_REMINDER" />
+278-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:240:17-79
+278-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:240:25-76
+279                <action android:name="android.intent.action.TIME_SET" />
+279-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:241:17-73
+279-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:241:25-70
+280
+281                <data android:scheme="content" />
+281-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:47:13-43
+281-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:47:19-40
+282            </intent-filter>
+283            <intent-filter>
+283-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:244:13-246:29
+284                <action android:name="android.intent.action.LOCALE_CHANGED" />
+284-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:245:17-79
+284-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:245:25-76
+285            </intent-filter>
+286            <intent-filter>
+286-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:247:13-251:29
+287                <action android:name="android.intent.action.PROVIDER_CHANGED" />
+287-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:248:17-80
+287-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:248:25-78
+288
+289                <data android:scheme="content" />
+289-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:47:13-43
+289-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:47:19-40
+290                <data android:host="com.android.calendar" />
+290-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:47:13-43
+290-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:82:23-58
+291            </intent-filter>
+292        </receiver>
+293        <receiver
+293-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:254:9-263:20
+294            android:name="com.android.calendar.UpgradeReceiver"
+294-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:254:19-70
+295            android:exported="true" >
+295-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:255:13-36
+296            <intent-filter>
+296-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:256:13-259:29
+297                <action android:name="android.intent.action.BOOT_COMPLETED" />
+297-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:257:17-79
+297-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:257:25-76
+298
+299                <category android:name="android.intent.category.DEFAULT" />
+299-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:74:17-76
+299-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:74:27-73
+300            </intent-filter>
+301            <intent-filter>
+301-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:260:13-262:29
+302                <action android:name="android.intent.action.MY_PACKAGE_REPLACED" />
+302-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:261:17-84
+302-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:261:25-81
+303            </intent-filter>
+304        </receiver>
+305
+306        <service
+306-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:265:9-267:62
+307            android:name="com.android.calendar.alerts.AlertService"
+307-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:265:18-73
+308            android:exported="false"
+308-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:266:13-37
+309            android:foregroundServiceType="systemExempted" />
+309-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:267:13-59
+310        <service android:name="com.android.calendar.alerts.DismissAlarmsService" />
+310-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:269:9-84
+310-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:269:18-81
+311        <service android:name="com.android.calendar.alerts.SnoozeAlarmsService" />
+311-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:271:9-83
+311-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:271:18-80
+312
+313        <!-- Declarations for the widget -->
+314        <receiver
+314-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:274:9-281:20
+315            android:name="com.android.calendar.widget.CalendarAppWidgetProvider"
+315-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:274:19-87
+316            android:exported="true" >
+316-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:275:13-36
+317            <intent-filter>
+317-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:276:13-279:29
+318                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+318-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:277:17-84
+318-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:277:25-81
+319                <action android:name="com.android.calendar.APPWIDGET_UPDATE" />
+319-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:278:17-80
+319-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:278:25-77
+320            </intent-filter>
+321
+322            <meta-data
+322-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:280:13-107
+323                android:name="android.appwidget.provider"
+323-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:280:24-65
+324                android:resource="@xml/appwidget_info" />
+324-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:280:66-104
+325        </receiver>
+326        <receiver
+326-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:283:9-302:20
+327            android:name="com.android.calendar.widget.CalendarAppWidgetService$CalendarFactory"
+327-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:283:19-102
+328            android:exported="true" >
+328-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:284:13-36
+329            <intent-filter>
+329-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:285:13-290:29
+330                <action android:name="android.intent.action.TIMEZONE_CHANGED" />
+330-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:286:17-80
+330-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:286:25-78
+331                <action android:name="android.intent.action.DATE_CHANGED" />
+331-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:287:17-76
+331-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:287:25-74
+332                <action android:name="android.intent.action.TIME_SET" />
+332-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:241:17-73
+332-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:241:25-70
+333                <action android:name="android.intent.action.LOCALE_CHANGED" />
+333-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:245:17-79
+333-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:245:25-76
+334            </intent-filter>
+335            <intent-filter>
+335-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:247:13-251:29
+336                <action android:name="android.intent.action.PROVIDER_CHANGED" />
+336-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:248:17-80
+336-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:248:25-78
+337
+338                <data android:scheme="content" />
+338-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:47:13-43
+338-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:47:19-40
+339                <data android:host="com.android.calendar" />
+339-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:47:13-43
+339-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:82:23-58
+340            </intent-filter>
+341            <intent-filter>
+341-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:296:13-301:29
+342                <action android:name="com.android.calendar.APPWIDGET_SCHEDULED_UPDATE" />
+342-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:297:17-89
+342-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:297:25-87
+343
+344                <data android:scheme="content" />
+344-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:47:13-43
+344-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:47:19-40
+345                <data android:host="com.android.calendar" />
+345-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:47:13-43
+345-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:82:23-58
+346                <data android:mimeType="vnd.android.data/update" />
+346-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:47:13-43
+346-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:81:23-52
+347            </intent-filter>
+348        </receiver>
+349
+350        <service
+350-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:304:9-307:19
+351            android:name="com.android.calendar.widget.CalendarAppWidgetService"
+351-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:304:18-85
+352            android:exported="false"
+352-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:305:13-37
+353            android:permission="android.permission.BIND_REMOTEVIEWS" >
+353-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:306:13-69
+354        </service>
+355        <service android:name="com.android.calendar.AsyncQueryServiceHelper" />
+355-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:309:9-80
+355-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:309:18-77
+356
+357        <activity
+357-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:310:9-312:40
+358            android:name="com.android.calendar.ui.MlDebugActivity"
+358-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:311:13-67
+359            android:exported="false" />
+359-->D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:312:13-37
+360
+361        <provider
+361-->[androidx.emoji2:emoji2:1.3.0] C:\Users\86137\.gradle\caches\transforms-4\aa3087217393cca5897a1baefaa4f773\transformed\emoji2-1.3.0\AndroidManifest.xml:24:9-32:20
+362            android:name="androidx.startup.InitializationProvider"
+362-->[androidx.emoji2:emoji2:1.3.0] C:\Users\86137\.gradle\caches\transforms-4\aa3087217393cca5897a1baefaa4f773\transformed\emoji2-1.3.0\AndroidManifest.xml:25:13-67
+363            android:authorities="ws.xsoh.etar.debug.androidx-startup"
+363-->[androidx.emoji2:emoji2:1.3.0] C:\Users\86137\.gradle\caches\transforms-4\aa3087217393cca5897a1baefaa4f773\transformed\emoji2-1.3.0\AndroidManifest.xml:26:13-68
+364            android:exported="false" >
+364-->[androidx.emoji2:emoji2:1.3.0] C:\Users\86137\.gradle\caches\transforms-4\aa3087217393cca5897a1baefaa4f773\transformed\emoji2-1.3.0\AndroidManifest.xml:27:13-37
+365            <meta-data
+365-->[androidx.emoji2:emoji2:1.3.0] C:\Users\86137\.gradle\caches\transforms-4\aa3087217393cca5897a1baefaa4f773\transformed\emoji2-1.3.0\AndroidManifest.xml:29:13-31:52
+366                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+366-->[androidx.emoji2:emoji2:1.3.0] C:\Users\86137\.gradle\caches\transforms-4\aa3087217393cca5897a1baefaa4f773\transformed\emoji2-1.3.0\AndroidManifest.xml:30:17-75
+367                android:value="androidx.startup" />
+367-->[androidx.emoji2:emoji2:1.3.0] C:\Users\86137\.gradle\caches\transforms-4\aa3087217393cca5897a1baefaa4f773\transformed\emoji2-1.3.0\AndroidManifest.xml:31:17-49
+368            <meta-data
+368-->[androidx.lifecycle:lifecycle-process:2.10.0] C:\Users\86137\.gradle\caches\transforms-4\65f9ebdd4df613cec4424ac4c6b6bc83\transformed\lifecycle-process-2.10.0\AndroidManifest.xml:29:13-31:52
+369                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+369-->[androidx.lifecycle:lifecycle-process:2.10.0] C:\Users\86137\.gradle\caches\transforms-4\65f9ebdd4df613cec4424ac4c6b6bc83\transformed\lifecycle-process-2.10.0\AndroidManifest.xml:30:17-78
+370                android:value="androidx.startup" />
+370-->[androidx.lifecycle:lifecycle-process:2.10.0] C:\Users\86137\.gradle\caches\transforms-4\65f9ebdd4df613cec4424ac4c6b6bc83\transformed\lifecycle-process-2.10.0\AndroidManifest.xml:31:17-49
+371            <meta-data
+371-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\86137\.gradle\caches\transforms-4\bd3c5c08416bc8231c5ba93f54fc11bd\transformed\profileinstaller-1.4.0\AndroidManifest.xml:29:13-31:52
+372                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+372-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\86137\.gradle\caches\transforms-4\bd3c5c08416bc8231c5ba93f54fc11bd\transformed\profileinstaller-1.4.0\AndroidManifest.xml:30:17-85
+373                android:value="androidx.startup" />
+373-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\86137\.gradle\caches\transforms-4\bd3c5c08416bc8231c5ba93f54fc11bd\transformed\profileinstaller-1.4.0\AndroidManifest.xml:31:17-49
+374        </provider>
+375
+376        <uses-library
+376-->[androidx.window:window:1.0.0] C:\Users\86137\.gradle\caches\transforms-4\d14765384fbbc6b2dc785de2a62e482f\transformed\window-1.0.0\AndroidManifest.xml:25:9-27:40
+377            android:name="androidx.window.extensions"
+377-->[androidx.window:window:1.0.0] C:\Users\86137\.gradle\caches\transforms-4\d14765384fbbc6b2dc785de2a62e482f\transformed\window-1.0.0\AndroidManifest.xml:26:13-54
+378            android:required="false" />
+378-->[androidx.window:window:1.0.0] C:\Users\86137\.gradle\caches\transforms-4\d14765384fbbc6b2dc785de2a62e482f\transformed\window-1.0.0\AndroidManifest.xml:27:13-37
+379        <uses-library
+379-->[androidx.window:window:1.0.0] C:\Users\86137\.gradle\caches\transforms-4\d14765384fbbc6b2dc785de2a62e482f\transformed\window-1.0.0\AndroidManifest.xml:28:9-30:40
+380            android:name="androidx.window.sidecar"
+380-->[androidx.window:window:1.0.0] C:\Users\86137\.gradle\caches\transforms-4\d14765384fbbc6b2dc785de2a62e482f\transformed\window-1.0.0\AndroidManifest.xml:29:13-51
+381            android:required="false" />
+381-->[androidx.window:window:1.0.0] C:\Users\86137\.gradle\caches\transforms-4\d14765384fbbc6b2dc785de2a62e482f\transformed\window-1.0.0\AndroidManifest.xml:30:13-37
+382
+383        <receiver
+383-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\86137\.gradle\caches\transforms-4\bd3c5c08416bc8231c5ba93f54fc11bd\transformed\profileinstaller-1.4.0\AndroidManifest.xml:34:9-52:20
+384            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+384-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\86137\.gradle\caches\transforms-4\bd3c5c08416bc8231c5ba93f54fc11bd\transformed\profileinstaller-1.4.0\AndroidManifest.xml:35:13-76
+385            android:directBootAware="false"
+385-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\86137\.gradle\caches\transforms-4\bd3c5c08416bc8231c5ba93f54fc11bd\transformed\profileinstaller-1.4.0\AndroidManifest.xml:36:13-44
+386            android:enabled="true"
+386-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\86137\.gradle\caches\transforms-4\bd3c5c08416bc8231c5ba93f54fc11bd\transformed\profileinstaller-1.4.0\AndroidManifest.xml:37:13-35
+387            android:exported="true"
+387-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\86137\.gradle\caches\transforms-4\bd3c5c08416bc8231c5ba93f54fc11bd\transformed\profileinstaller-1.4.0\AndroidManifest.xml:38:13-36
+388            android:permission="android.permission.DUMP" >
+388-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\86137\.gradle\caches\transforms-4\bd3c5c08416bc8231c5ba93f54fc11bd\transformed\profileinstaller-1.4.0\AndroidManifest.xml:39:13-57
+389            <intent-filter>
+389-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\86137\.gradle\caches\transforms-4\bd3c5c08416bc8231c5ba93f54fc11bd\transformed\profileinstaller-1.4.0\AndroidManifest.xml:40:13-42:29
+390                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+390-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\86137\.gradle\caches\transforms-4\bd3c5c08416bc8231c5ba93f54fc11bd\transformed\profileinstaller-1.4.0\AndroidManifest.xml:41:17-91
+390-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\86137\.gradle\caches\transforms-4\bd3c5c08416bc8231c5ba93f54fc11bd\transformed\profileinstaller-1.4.0\AndroidManifest.xml:41:25-88
+391            </intent-filter>
+392            <intent-filter>
+392-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\86137\.gradle\caches\transforms-4\bd3c5c08416bc8231c5ba93f54fc11bd\transformed\profileinstaller-1.4.0\AndroidManifest.xml:43:13-45:29
+393                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+393-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\86137\.gradle\caches\transforms-4\bd3c5c08416bc8231c5ba93f54fc11bd\transformed\profileinstaller-1.4.0\AndroidManifest.xml:44:17-85
+393-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\86137\.gradle\caches\transforms-4\bd3c5c08416bc8231c5ba93f54fc11bd\transformed\profileinstaller-1.4.0\AndroidManifest.xml:44:25-82
+394            </intent-filter>
+395            <intent-filter>
+395-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\86137\.gradle\caches\transforms-4\bd3c5c08416bc8231c5ba93f54fc11bd\transformed\profileinstaller-1.4.0\AndroidManifest.xml:46:13-48:29
+396                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+396-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\86137\.gradle\caches\transforms-4\bd3c5c08416bc8231c5ba93f54fc11bd\transformed\profileinstaller-1.4.0\AndroidManifest.xml:47:17-88
+396-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\86137\.gradle\caches\transforms-4\bd3c5c08416bc8231c5ba93f54fc11bd\transformed\profileinstaller-1.4.0\AndroidManifest.xml:47:25-85
+397            </intent-filter>
+398            <intent-filter>
+398-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\86137\.gradle\caches\transforms-4\bd3c5c08416bc8231c5ba93f54fc11bd\transformed\profileinstaller-1.4.0\AndroidManifest.xml:49:13-51:29
+399                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+399-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\86137\.gradle\caches\transforms-4\bd3c5c08416bc8231c5ba93f54fc11bd\transformed\profileinstaller-1.4.0\AndroidManifest.xml:50:17-95
+399-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\86137\.gradle\caches\transforms-4\bd3c5c08416bc8231c5ba93f54fc11bd\transformed\profileinstaller-1.4.0\AndroidManifest.xml:50:25-92
+400            </intent-filter>
+401        </receiver>
+402    </application>
+403
+404</manifest>
