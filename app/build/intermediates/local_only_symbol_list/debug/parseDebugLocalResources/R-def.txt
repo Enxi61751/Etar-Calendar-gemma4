@@ -571,6 +571,7 @@ id body_frame
 id bottom
 id btnCallGnn
 id btnPickImage
+id btn_smart_input
 id bubble_layout
 id button_date
 id button_view

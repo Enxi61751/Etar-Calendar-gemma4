@@ -4,7 +4,7 @@
             "outputFile": "ws.xsoh.etar.app-mergeDebugResources-42:/values-v27/values-v27.xml",
             "map": [
                 {
-                    "source": "D:\\Calendar\\Calendar_back\\Etar-Calendar-master\\app\\src\\main\\res\\values-v27\\themes.xml",
+                    "source": "D:\\Calendar\\Calendar_frontend\\Etar-Calendar-master\\app\\src\\main\\res\\values-v27\\themes.xml",
                     "from": {
                         "startLines": "3",
                         "startColumns": "4",

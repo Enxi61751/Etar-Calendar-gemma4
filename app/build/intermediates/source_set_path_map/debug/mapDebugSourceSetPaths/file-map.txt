@@ -37,10 +37,10 @@ ws.xsoh.etar.app-activity-1.8.0-35 C:\Users\86137\.gradle\caches\transforms-4\ea
 ws.xsoh.etar.app-appcompat-resources-1.7.1-36 C:\Users\86137\.gradle\caches\transforms-4\eebf88be6ee8dc0428f48eee2f3919aa\transformed\appcompat-resources-1.7.1\res
 ws.xsoh.etar.app-viewpager2-1.0.0-37 C:\Users\86137\.gradle\caches\transforms-4\feaf5f60a3f635f51d2bfbb34ab7e1e9\transformed\viewpager2-1.0.0\res
 ws.xsoh.etar.app-dynamicanimation-1.1.0-38 C:\Users\86137\.gradle\caches\transforms-4\fee0852985ab2193795efe69122a3511\transformed\dynamicanimation-1.1.0\res
-ws.xsoh.etar.app-pngs-39 D:\Calendar\Calendar_back\Etar-Calendar-master\app\build\generated\res\pngs\debug
-ws.xsoh.etar.app-resValues-40 D:\Calendar\Calendar_back\Etar-Calendar-master\app\build\generated\res\resValues\debug
-ws.xsoh.etar.app-packageDebugResources-41 D:\Calendar\Calendar_back\Etar-Calendar-master\app\build\intermediates\incremental\debug\packageDebugResources\merged.dir
-ws.xsoh.etar.app-packageDebugResources-42 D:\Calendar\Calendar_back\Etar-Calendar-master\app\build\intermediates\incremental\debug\packageDebugResources\stripped.dir
-ws.xsoh.etar.app-debug-43 D:\Calendar\Calendar_back\Etar-Calendar-master\app\build\intermediates\merged_res\debug\mergeDebugResources
-ws.xsoh.etar.app-debug-44 D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\debug\res
-ws.xsoh.etar.app-main-45 D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\res
+ws.xsoh.etar.app-pngs-39 D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\build\generated\res\pngs\debug
+ws.xsoh.etar.app-resValues-40 D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\build\generated\res\resValues\debug
+ws.xsoh.etar.app-packageDebugResources-41 D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\build\intermediates\incremental\debug\packageDebugResources\merged.dir
+ws.xsoh.etar.app-packageDebugResources-42 D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\build\intermediates\incremental\debug\packageDebugResources\stripped.dir
+ws.xsoh.etar.app-debug-43 D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\build\intermediates\merged_res\debug\mergeDebugResources
+ws.xsoh.etar.app-debug-44 D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\debug\res
+ws.xsoh.etar.app-main-45 D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\res

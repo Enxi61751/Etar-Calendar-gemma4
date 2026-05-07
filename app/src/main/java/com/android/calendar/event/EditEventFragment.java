@@ -79,9 +79,21 @@ import com.android.calendar.colorpicker.HsvColorComparator;
 import com.google.android.material.dialog.MaterialAlertDialogBuilder;
 
 import java.io.Serializable;
+import java.io.File;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.concurrent.TimeUnit;
 
+import okhttp3.Call;
+import okhttp3.Callback;
+import okhttp3.MediaType;
+import okhttp3.MultipartBody;
+import okhttp3.OkHttpClient;
+import okhttp3.Request;
+import okhttp3.RequestBody;
+import okhttp3.Response;
+import ws.xsoh.etar.BuildConfig;
 import ws.xsoh.etar.R;
 
 public class EditEventFragment extends Fragment implements EventHandler, OnColorSelectedListener {
@@ -96,6 +108,17 @@ public class EditEventFragment extends Fragment implements EventHandler, OnColor
 
     private android.media.MediaRecorder mRecorder = null;
     private String mCurrentRecordPath = null;
+
+    private File mSmartTextFile = null;
+    private File mSmartImageFile = null;
+    private File mSmartAudioFile = null;
+    private String mSmartTextContent = "";
+
+    private final OkHttpClient mSmartInputClient = new OkHttpClient.Builder()
+            .connectTimeout(30, TimeUnit.SECONDS)
+            .writeTimeout(180, TimeUnit.SECONDS)
+            .readTimeout(180, TimeUnit.SECONDS)
+            .build();
 
     private static final String BUNDLE_KEY_MODEL = "key_model";
     private static final String BUNDLE_KEY_EDIT_STATE = "key_edit_state";
@@ -371,7 +394,7 @@ public class EditEventFragment extends Fragment implements EventHandler, OnColor
     // 1. 显示操作菜单
     private void showSmartInputDialog() {
         // ==== 修改了这里：增加了一个选项 ====
-        String[] options = {"📝 粘贴文字", "🖼️ 上传图片", "🎵 上传音频", "🎤 语音录入", "📥 加载解析结果"};
+        String[] options = {"📝 粘贴文字", "🖼️ 上传图片", "🎵 上传音频", "🎤 语音录入", "🚀 提交给AI解析"};
         new AlertDialog.Builder(getActivity())
                 .setTitle("选择操作")
                 .setItems(options, new DialogInterface.OnClickListener() {
@@ -395,8 +418,8 @@ public class EditEventFragment extends Fragment implements EventHandler, OnColor
                                     startRecording();
                                 }
                                 break;
-                            case 4: // ==== 新增：调用解析方法 ====
-                                loadParsedJsonData();
+                            case 4:
+                                submitSmartInputToServer();
                                 break;
                         }
                     }
@@ -454,7 +477,10 @@ public class EditEventFragment extends Fragment implements EventHandler, OnColor
             }
             mRecorder.release();
             mRecorder = null;
-            //Toast.makeText(getActivity(), "录音已安全保存，等待后端解析", Toast.LENGTH_SHORT).show();
+            if (mCurrentRecordPath != null) {
+                mSmartAudioFile = new File(mCurrentRecordPath);
+                Toast.makeText(getActivity(), "录音已保存，可以提交给AI解析", Toast.LENGTH_SHORT).show();
+            }
         }
     }
 
@@ -572,7 +598,9 @@ public class EditEventFragment extends Fragment implements EventHandler, OnColor
             fos.write(content.getBytes(java.nio.charset.StandardCharsets.UTF_8));
             fos.close();
 
-            //Toast.makeText(getActivity(), "文字已保存，等待后端解析", Toast.LENGTH_SHORT).show();
+            mSmartTextFile = file;
+            mSmartTextContent = content;
+            Toast.makeText(getActivity(), "文字已保存，可以继续添加图片/音频或提交解析", Toast.LENGTH_SHORT).show();
         } catch (java.io.IOException e) {
             e.printStackTrace();
             Toast.makeText(getActivity(), "输入失败", Toast.LENGTH_SHORT).show();
@@ -580,7 +608,7 @@ public class EditEventFragment extends Fragment implements EventHandler, OnColor
     }
 
     // 4. 将选中的图片或音频复制到内部文件夹
-    private void copyUriContentToInternalFolder(Uri sourceUri, String prefix, String extension) {
+    private File copyUriContentToInternalFolder(Uri sourceUri, String prefix, String extension) {
         try {
             java.io.File folder = new java.io.File(getActivity().getFilesDir(), SMART_INPUT_FOLDER);
             if (!folder.exists()) folder.mkdirs();
@@ -599,10 +627,179 @@ public class EditEventFragment extends Fragment implements EventHandler, OnColor
             is.close();
             fos.close();
 
-            //Toast.makeText(getActivity(), "文件已保存，等待后端解析", Toast.LENGTH_SHORT).show();
+            Toast.makeText(getActivity(), "文件已保存，可以提交给AI解析", Toast.LENGTH_SHORT).show();
+            return destinationFile;
         } catch (Exception e) {
             e.printStackTrace();
             Toast.makeText(getActivity(), "上传失败", Toast.LENGTH_SHORT).show();
+            return null;
+        }
+    }
+
+
+    private void submitSmartInputToServer() {
+        File textFile = mSmartTextFile != null ? mSmartTextFile : findLatestSmartFile("text_");
+        File imageFile = mSmartImageFile != null ? mSmartImageFile : findLatestSmartFile("image_");
+        File audioFile = mSmartAudioFile != null ? mSmartAudioFile : findLatestSmartFile("audio_");
+        if (audioFile == null) {
+            audioFile = findLatestSmartFile("voice_");
+        }
+
+        String text = mSmartTextContent;
+        if ((text == null || text.isEmpty()) && textFile != null) {
+            text = readTextFileQuietly(textFile);
+        }
+
+        if ((text == null || text.trim().isEmpty()) && imageFile == null && audioFile == null) {
+            Toast.makeText(getActivity(), "请先输入文字、选择图片或录入音频", Toast.LENGTH_SHORT).show();
+            return;
+        }
+
+        String baseUrl = BuildConfig.OCR_BASE_URL;
+        if (!baseUrl.endsWith("/")) {
+            baseUrl = baseUrl + "/";
+        }
+        String url = baseUrl + "parse_schedule";
+
+        MultipartBody.Builder builder = new MultipartBody.Builder().setType(MultipartBody.FORM);
+        builder.addFormDataPart("text", text == null ? "" : text);
+
+        if (imageFile != null && imageFile.exists()) {
+            builder.addFormDataPart(
+                    "image",
+                    imageFile.getName(),
+                    RequestBody.create(MediaType.parse("image/*"), imageFile)
+            );
+        }
+
+        if (audioFile != null && audioFile.exists()) {
+            builder.addFormDataPart(
+                    "audio",
+                    audioFile.getName(),
+                    RequestBody.create(MediaType.parse("audio/*"), audioFile)
+            );
+        }
+
+        Request request = new Request.Builder()
+                .url(url)
+                .post(builder.build())
+                .build();
+
+        Toast.makeText(getActivity(), "正在提交给AI解析，请稍等...", Toast.LENGTH_SHORT).show();
+
+        mSmartInputClient.newCall(request).enqueue(new Callback() {
+            @Override
+            public void onFailure(Call call, IOException e) {
+                if (mActivity != null) {
+                    mActivity.runOnUiThread(new Runnable() {
+                        @Override
+                        public void run() {
+                            Toast.makeText(getActivity(), "连接后端失败：" + e.getMessage(), Toast.LENGTH_LONG).show();
+                        }
+                    });
+                }
+            }
+
+            @Override
+            public void onResponse(Call call, Response response) throws IOException {
+                String body = response.body() != null ? response.body().string() : "";
+                if (mActivity != null) {
+                    mActivity.runOnUiThread(new Runnable() {
+                        @Override
+                        public void run() {
+                            if (!response.isSuccessful()) {
+                                Toast.makeText(getActivity(), "后端返回错误：" + response.code() + " " + body, Toast.LENGTH_LONG).show();
+                                return;
+                            }
+                            handleSmartParseResponse(body);
+                        }
+                    });
+                }
+            }
+        });
+    }
+
+    private File findLatestSmartFile(String prefix) {
+        File folder = new File(getActivity().getFilesDir(), SMART_INPUT_FOLDER);
+        File[] files = folder.listFiles();
+        if (files == null) return null;
+        File latest = null;
+        for (File f : files) {
+            if (f.isFile() && f.getName().startsWith(prefix)) {
+                if (latest == null || f.lastModified() > latest.lastModified()) {
+                    latest = f;
+                }
+            }
+        }
+        return latest;
+    }
+
+    private String readTextFileQuietly(File file) {
+        try {
+            byte[] data = new byte[(int) file.length()];
+            java.io.FileInputStream fis = new java.io.FileInputStream(file);
+            fis.read(data);
+            fis.close();
+            return new String(data, java.nio.charset.StandardCharsets.UTF_8);
+        } catch (Exception e) {
+            return "";
+        }
+    }
+
+    private void handleSmartParseResponse(String body) {
+        try {
+            org.json.JSONObject rootObj = new org.json.JSONObject(body);
+            if (!rootObj.optBoolean("success", false)) {
+                Toast.makeText(getActivity(), "AI解析失败：" + rootObj.optString("error", body), Toast.LENGTH_LONG).show();
+                return;
+            }
+
+            org.json.JSONObject innerObj = rootObj.optJSONObject("data");
+            if (innerObj == null) {
+                String replyStr = rootObj.optString("reply", "");
+                int startIndex = replyStr.indexOf("{");
+                int endIndex = replyStr.lastIndexOf("}");
+                if (startIndex == -1 || endIndex == -1) {
+                    Toast.makeText(getActivity(), "解析结果中没有找到JSON", Toast.LENGTH_SHORT).show();
+                    return;
+                }
+                innerObj = new org.json.JSONObject(replyStr.substring(startIndex, endIndex + 1));
+            }
+
+            org.json.JSONArray list = innerObj.optJSONArray("日程列表");
+            if (list == null || list.length() == 0) {
+                Toast.makeText(getActivity(), "AI没有解析出日程", Toast.LENGTH_SHORT).show();
+                return;
+            }
+
+            org.json.JSONObject eventObj = list.getJSONObject(0);
+            String title = eventObj.optString("事件", "");
+            String location = eventObj.optString("地点", "");
+            String timeStr = eventObj.optString("时间", "");
+
+            String description = "";
+            org.json.JSONArray people = eventObj.optJSONArray("人物");
+            if (people != null && people.length() > 0) {
+                StringBuilder sb = new StringBuilder("参与人物：");
+                for (int i = 0; i < people.length(); i++) {
+                    sb.append(people.optString(i)).append(" ");
+                }
+                description = sb.toString();
+            }
+
+            long startMillis = 0;
+            if (timeStr != null && !timeStr.isEmpty() && !"null".equalsIgnoreCase(timeStr)) {
+                java.text.SimpleDateFormat sdf = new java.text.SimpleDateFormat("yyyy-MM-dd HH:mm:ss", java.util.Locale.getDefault());
+                java.util.Date date = sdf.parse(timeStr);
+                if (date != null) startMillis = date.getTime();
+            }
+
+            if (mView != null) {
+                mView.fillSmartParsedData(title, location, startMillis, description);
+                Toast.makeText(getActivity(), "✅ AI已自动填写日程信息", Toast.LENGTH_SHORT).show();
+            }
+        } catch (Exception e) {
+            Toast.makeText(getActivity(), "解析响应失败：" + e.getMessage(), Toast.LENGTH_LONG).show();
         }
     }
 
@@ -616,10 +813,10 @@ public class EditEventFragment extends Fragment implements EventHandler, OnColor
             if (selectedUri != null) {
                 switch (requestCode) {
                     case REQUEST_CODE_PICK_IMAGE:
-                        copyUriContentToInternalFolder(selectedUri, "image", ".jpg");
+                        mSmartImageFile = copyUriContentToInternalFolder(selectedUri, "image", ".jpg");
                         break;
                     case REQUEST_CODE_PICK_AUDIO:
-                        copyUriContentToInternalFolder(selectedUri, "audio", ".mp3");
+                        mSmartAudioFile = copyUriContentToInternalFolder(selectedUri, "audio", ".mp3");
                         break;
                 }
             }

@@ -52,6 +52,9 @@ public final class EditEventAllBinding implements ViewBinding {
   public final ImageView availabilityIcon;
 
   @NonNull
+  public final Button btnSmartInput;
+
+  @NonNull
   public final View calendarSelectorGroupBackground;
 
   @NonNull
@@ -237,23 +240,24 @@ public final class EditEventAllBinding implements ViewBinding {
   private EditEventAllBinding(@NonNull LinearLayout rootView, @NonNull Group addAttendeesGroup,
       @NonNull TextInputLayout addAttendeesRow, @NonNull RecipientEditTextView attendees,
       @NonNull ImageView attendeesIcon, @NonNull Spinner availability,
-      @NonNull ImageView availabilityIcon, @NonNull View calendarSelectorGroupBackground,
-      @NonNull ImageView calendarSelectorGroupIcon, @NonNull Spinner calendarsSpinner,
-      @NonNull ImageButton changeColor, @NonNull EditText description,
-      @NonNull ImageView descriptionIcon, @NonNull TextInputLayout descriptionRow,
-      @NonNull ConstraintLayout editEventAll, @NonNull Button endDate,
-      @NonNull TextView endDateHomeTz, @NonNull Button endTime, @NonNull TextView endTimeHomeTz,
-      @NonNull LinearLayout fromRowHomeTz, @NonNull ImageView imageView,
-      @NonNull MaterialSwitch isAllDay, @NonNull TextView isAllDayLabel,
-      @NonNull AutoCompleteTextView location, @NonNull TextView organizer,
-      @NonNull TextView organizerLabel, @NonNull LinearLayout organizerRow,
-      @NonNull Button reminderAdd, @NonNull ImageView reminderIcon,
-      @NonNull LinearLayout reminderItemsContainer, @NonNull Group responseGroup,
-      @NonNull TextView responseLabel, @NonNull RadioButton responseMaybe,
-      @NonNull RadioButton responseNo, @NonNull LinearLayout responseRow,
-      @NonNull RadioGroup responseValue, @NonNull RadioButton responseYes, @NonNull Button rrule,
-      @NonNull ImageView rruleIcon, @NonNull Button startDate, @NonNull TextView startDateHomeTz,
-      @NonNull Button startTime, @NonNull TextView startTimeHomeTz, @NonNull Button timezoneButton,
+      @NonNull ImageView availabilityIcon, @NonNull Button btnSmartInput,
+      @NonNull View calendarSelectorGroupBackground, @NonNull ImageView calendarSelectorGroupIcon,
+      @NonNull Spinner calendarsSpinner, @NonNull ImageButton changeColor,
+      @NonNull EditText description, @NonNull ImageView descriptionIcon,
+      @NonNull TextInputLayout descriptionRow, @NonNull ConstraintLayout editEventAll,
+      @NonNull Button endDate, @NonNull TextView endDateHomeTz, @NonNull Button endTime,
+      @NonNull TextView endTimeHomeTz, @NonNull LinearLayout fromRowHomeTz,
+      @NonNull ImageView imageView, @NonNull MaterialSwitch isAllDay,
+      @NonNull TextView isAllDayLabel, @NonNull AutoCompleteTextView location,
+      @NonNull TextView organizer, @NonNull TextView organizerLabel,
+      @NonNull LinearLayout organizerRow, @NonNull Button reminderAdd,
+      @NonNull ImageView reminderIcon, @NonNull LinearLayout reminderItemsContainer,
+      @NonNull Group responseGroup, @NonNull TextView responseLabel,
+      @NonNull RadioButton responseMaybe, @NonNull RadioButton responseNo,
+      @NonNull LinearLayout responseRow, @NonNull RadioGroup responseValue,
+      @NonNull RadioButton responseYes, @NonNull Button rrule, @NonNull ImageView rruleIcon,
+      @NonNull Button startDate, @NonNull TextView startDateHomeTz, @NonNull Button startTime,
+      @NonNull TextView startTimeHomeTz, @NonNull Button timezoneButton,
       @NonNull Group timezoneButtonRow, @NonNull ImageView timezoneIcon,
       @NonNull TextView timezoneTextView, @NonNull LinearLayout timezoneTextviewRow,
       @NonNull TextInputEditText title, @NonNull LinearLayout toRowHomeTz, @NonNull EditText url,
@@ -270,6 +274,7 @@ public final class EditEventAllBinding implements ViewBinding {
     this.attendeesIcon = attendeesIcon;
     this.availability = availability;
     this.availabilityIcon = availabilityIcon;
+    this.btnSmartInput = btnSmartInput;
     this.calendarSelectorGroupBackground = calendarSelectorGroupBackground;
     this.calendarSelectorGroupIcon = calendarSelectorGroupIcon;
     this.calendarsSpinner = calendarsSpinner;
@@ -393,6 +398,12 @@ public final class EditEventAllBinding implements ViewBinding {
       id = R.id.availability_icon;
       ImageView availabilityIcon = ViewBindings.findChildViewById(rootView, id);
       if (availabilityIcon == null) {
+        break missingId;
+      }
+
+      id = R.id.btn_smart_input;
+      Button btnSmartInput = ViewBindings.findChildViewById(rootView, id);
+      if (btnSmartInput == null) {
         break missingId;
       }
 
@@ -763,16 +774,17 @@ public final class EditEventAllBinding implements ViewBinding {
       }
 
       return new EditEventAllBinding((LinearLayout) rootView, addAttendeesGroup, addAttendeesRow,
-          attendees, attendeesIcon, availability, availabilityIcon, calendarSelectorGroupBackground,
-          calendarSelectorGroupIcon, calendarsSpinner, changeColor, description, descriptionIcon,
-          descriptionRow, editEventAll, endDate, endDateHomeTz, endTime, endTimeHomeTz,
-          fromRowHomeTz, imageView, isAllDay, isAllDayLabel, location, organizer, organizerLabel,
-          organizerRow, reminderAdd, reminderIcon, reminderItemsContainer, responseGroup,
-          responseLabel, responseMaybe, responseNo, responseRow, responseValue, responseYes, rrule,
-          rruleIcon, startDate, startDateHomeTz, startTime, startTimeHomeTz, timezoneButton,
-          timezoneButtonRow, timezoneIcon, timezoneTextView, timezoneTextviewRow, title,
-          toRowHomeTz, url, urlIcon, urlRow, view, view1, view2, view3, view4, view5, view6, view7,
-          visibility, visibilityIcon, when, whenLabel, whenRow, whereIcon, whereRow);
+          attendees, attendeesIcon, availability, availabilityIcon, btnSmartInput,
+          calendarSelectorGroupBackground, calendarSelectorGroupIcon, calendarsSpinner, changeColor,
+          description, descriptionIcon, descriptionRow, editEventAll, endDate, endDateHomeTz,
+          endTime, endTimeHomeTz, fromRowHomeTz, imageView, isAllDay, isAllDayLabel, location,
+          organizer, organizerLabel, organizerRow, reminderAdd, reminderIcon,
+          reminderItemsContainer, responseGroup, responseLabel, responseMaybe, responseNo,
+          responseRow, responseValue, responseYes, rrule, rruleIcon, startDate, startDateHomeTz,
+          startTime, startTimeHomeTz, timezoneButton, timezoneButtonRow, timezoneIcon,
+          timezoneTextView, timezoneTextviewRow, title, toRowHomeTz, url, urlIcon, urlRow, view,
+          view1, view2, view3, view4, view5, view6, view7, visibility, visibilityIcon, when,
+          whenLabel, whenRow, whereIcon, whereRow);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

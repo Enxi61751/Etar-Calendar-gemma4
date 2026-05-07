@@ -41,6 +41,10 @@
     <uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS" />
     <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+    <uses-permission android:name="android.permission.READ_MEDIA_AUDIO" />
 
     <queries>
         <intent>
@@ -86,7 +90,7 @@
         android:taskAffinity="ws.xsoh.etar.task"
         android:testOnly="true"
         android:theme="@style/Theme.Etar"
-        android:usesCleartextTraffic="false" >
+        android:usesCleartextTraffic="true" >
         <activity
             android:name="com.android.calendar.AllInOneActivity"
             android:exported="true"

@@ -4,25 +4,6 @@
             "outputFile": "ws.xsoh.etar.app-mergeDebugResources-42:/values-or/values-or.xml",
             "map": [
                 {
-                    "source": "D:\\Calendar\\Calendar_back\\Etar-Calendar-master\\app\\src\\main\\res\\values-or\\arrays.xml",
-                    "from": {
-                        "startLines": "44,19",
-                        "startColumns": "2,2",
-                        "startOffsets": "2470,807",
-                        "endLines": "49,43",
-                        "endColumns": "17,17",
-                        "endOffsets": "2784,2467"
-                    },
-                    "to": {
-                        "startLines": "2,8",
-                        "startColumns": "4,4",
-                        "startOffsets": "150,469",
-                        "endLines": "7,32",
-                        "endColumns": "17,17",
-                        "endOffsets": "464,2129"
-                    }
-                },
-                {
                     "source": "C:\\Users\\86137\\.gradle\\caches\\transforms-4\\457793e2ff695b5a34dbd73104df8d15\\transformed\\appcompat-1.7.1\\res\\values-or\\values-or.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29",
@@ -74,7 +55,26 @@
                     }
                 },
                 {
-                    "source": "D:\\Calendar\\Calendar_back\\Etar-Calendar-master\\app\\src\\main\\res\\values-or\\strings.xml",
+                    "source": "D:\\Calendar\\Calendar_frontend\\Etar-Calendar-master\\app\\src\\main\\res\\values-or\\arrays.xml",
+                    "from": {
+                        "startLines": "44,19",
+                        "startColumns": "2,2",
+                        "startOffsets": "2470,807",
+                        "endLines": "49,43",
+                        "endColumns": "17,17",
+                        "endOffsets": "2784,2467"
+                    },
+                    "to": {
+                        "startLines": "2,8",
+                        "startColumns": "4,4",
+                        "startOffsets": "150,469",
+                        "endLines": "7,32",
+                        "endColumns": "17,17",
+                        "endOffsets": "464,2129"
+                    }
+                },
+                {
+                    "source": "D:\\Calendar\\Calendar_frontend\\Etar-Calendar-master\\app\\src\\main\\res\\values-or\\strings.xml",
                     "from": {
                         "startLines": "11,25,24,23,28,27,29,21,22,26,8,4,15,3,2,20,17,18,10,5,16,6,7,9",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",

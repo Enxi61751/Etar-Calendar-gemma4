@@ -4,7 +4,7 @@
             "outputFile": "ws.xsoh.etar.app-mergeDebugResources-42:/values-night-v31/values-night-v31.xml",
             "map": [
                 {
-                    "source": "D:\\Calendar\\Calendar_back\\Etar-Calendar-master\\app\\src\\main\\res\\values-night-v31\\colors.xml",
+                    "source": "D:\\Calendar\\Calendar_frontend\\Etar-Calendar-master\\app\\src\\main\\res\\values-night-v31\\colors.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

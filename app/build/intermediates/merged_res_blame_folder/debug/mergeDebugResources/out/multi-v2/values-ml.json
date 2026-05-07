@@ -55,7 +55,7 @@
                     }
                 },
                 {
-                    "source": "D:\\Calendar\\Calendar_back\\Etar-Calendar-master\\app\\src\\main\\res\\values-ml\\strings.xml",
+                    "source": "D:\\Calendar\\Calendar_frontend\\Etar-Calendar-master\\app\\src\\main\\res\\values-ml\\strings.xml",
                     "from": {
                         "startLines": "34,38,42,46,30,26,73,72,71,62,23,59,25,76,75,77,69,70,3,52,22,74,60,18,16,17,19,13,14,10,4,5,63,7,6,12,20,68,50,65,51,66,2,11,64,61,15,9,24,57,55,56,54,8,21,58",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",

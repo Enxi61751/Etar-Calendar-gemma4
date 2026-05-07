@@ -64,7 +64,7 @@
         android:label="@string/standalone_app_label"
         android:taskAffinity="ws.xsoh.etar.task"
         android:requiredAccountType="*"
-        android:usesCleartextTraffic="false"
+        android:usesCleartextTraffic="true"
         android:theme="@style/Theme.Etar">
 
         <activity

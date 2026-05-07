@@ -4,7 +4,7 @@
             "outputFile": "ws.xsoh.etar.app-mergeDebugResources-42:/values-w800dp-h1232dp-v13/values-w800dp-h1232dp-v13.xml",
             "map": [
                 {
-                    "source": "D:\\Calendar\\Calendar_back\\Etar-Calendar-master\\app\\src\\main\\res\\values-w800dp-h1232dp\\config.xml",
+                    "source": "D:\\Calendar\\Calendar_frontend\\Etar-Calendar-master\\app\\src\\main\\res\\values-w800dp-h1232dp\\config.xml",
                     "from": {
                         "startLines": "22,16,19,25",
                         "startColumns": "4,4,4,4",
@@ -21,7 +21,7 @@
                     }
                 },
                 {
-                    "source": "D:\\Calendar\\Calendar_back\\Etar-Calendar-master\\app\\src\\main\\res\\values-w800dp-h1232dp\\dimens.xml",
+                    "source": "D:\\Calendar\\Calendar_frontend\\Etar-Calendar-master\\app\\src\\main\\res\\values-w800dp-h1232dp\\dimens.xml",
                     "from": {
                         "startLines": "18,17",
                         "startColumns": "4,4",

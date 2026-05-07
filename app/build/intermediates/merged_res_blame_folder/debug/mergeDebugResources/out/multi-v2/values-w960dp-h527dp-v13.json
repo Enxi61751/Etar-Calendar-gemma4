@@ -4,7 +4,24 @@
             "outputFile": "ws.xsoh.etar.app-mergeDebugResources-42:/values-w960dp-h527dp-v13/values-w960dp-h527dp-v13.xml",
             "map": [
                 {
-                    "source": "D:\\Calendar\\Calendar_back\\Etar-Calendar-master\\app\\src\\main\\res\\values-w960dp-h527dp\\config.xml",
+                    "source": "D:\\Calendar\\Calendar_frontend\\Etar-Calendar-master\\app\\src\\main\\res\\values-w960dp-h527dp\\integers.xml",
+                    "from": {
+                        "startLines": "21,23,19,15,17",
+                        "startColumns": "4,4,4,4,4",
+                        "startOffsets": "1154,1272,1020,778,883",
+                        "endColumns": "58,50,55,54,55",
+                        "endOffsets": "1208,1318,1071,828,934"
+                    },
+                    "to": {
+                        "startLines": "31,32,33,34,35",
+                        "startColumns": "4,4,4,4,4",
+                        "startOffsets": "1609,1668,1719,1775,1830",
+                        "endColumns": "58,50,55,54,55",
+                        "endOffsets": "1663,1714,1770,1825,1881"
+                    }
+                },
+                {
+                    "source": "D:\\Calendar\\Calendar_frontend\\Etar-Calendar-master\\app\\src\\main\\res\\values-w960dp-h527dp\\config.xml",
                     "from": {
                         "startLines": "29,36,18,15,21,26,32,23,34",
                         "startColumns": "4,4,4,4,4,4,4,4,4",
@@ -21,7 +38,7 @@
                     }
                 },
                 {
-                    "source": "D:\\Calendar\\Calendar_back\\Etar-Calendar-master\\app\\src\\main\\res\\values-w960dp-h527dp\\dimens.xml",
+                    "source": "D:\\Calendar\\Calendar_frontend\\Etar-Calendar-master\\app\\src\\main\\res\\values-w960dp-h527dp\\dimens.xml",
                     "from": {
                         "startLines": "18,23,21,20,17,24,37,40,39,27,26,31,32,22,29,36,19,25,34,35",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -35,23 +52,6 @@
                         "startOffsets": "535,589,637,690,746,797,853,908,966,1023,1082,1139,1188,1238,1285,1333,1389,1442,1499,1550",
                         "endColumns": "53,47,52,55,50,55,54,57,56,58,56,48,49,46,47,55,52,56,50,58",
                         "endOffsets": "584,632,685,741,792,848,903,961,1018,1077,1134,1183,1233,1280,1328,1384,1437,1494,1545,1604"
-                    }
-                },
-                {
-                    "source": "D:\\Calendar\\Calendar_back\\Etar-Calendar-master\\app\\src\\main\\res\\values-w960dp-h527dp\\integers.xml",
-                    "from": {
-                        "startLines": "21,23,19,15,17",
-                        "startColumns": "4,4,4,4,4",
-                        "startOffsets": "1154,1272,1020,778,883",
-                        "endColumns": "58,50,55,54,55",
-                        "endOffsets": "1208,1318,1071,828,934"
-                    },
-                    "to": {
-                        "startLines": "31,32,33,34,35",
-                        "startColumns": "4,4,4,4,4",
-                        "startOffsets": "1609,1668,1719,1775,1830",
-                        "endColumns": "58,50,55,54,55",
-                        "endOffsets": "1663,1714,1770,1825,1881"
                     }
                 }
             ]

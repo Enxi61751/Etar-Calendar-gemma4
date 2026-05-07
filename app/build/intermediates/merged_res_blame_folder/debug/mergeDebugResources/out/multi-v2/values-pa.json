@@ -4,24 +4,7 @@
             "outputFile": "ws.xsoh.etar.app-mergeDebugResources-42:/values-pa/values-pa.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\86137\\.gradle\\caches\\transforms-4\\30cf0bd4f0d2fb592315ffff5daa984a\\transformed\\core-1.13.1\\res\\values-pa\\values-pa.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9",
-                        "startColumns": "4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,153,255,358,459,561,659,788",
-                        "endColumns": "97,101,102,100,101,97,128,100",
-                        "endOffsets": "148,250,353,454,556,654,783,884"
-                    },
-                    "to": {
-                        "startLines": "100,101,102,103,104,105,106,242",
-                        "startColumns": "4,4,4,4,4,4,4,4",
-                        "startOffsets": "6793,6891,6993,7096,7197,7299,7397,17755",
-                        "endColumns": "97,101,102,100,101,97,128,100",
-                        "endOffsets": "6886,6988,7091,7192,7294,7392,7521,17851"
-                    }
-                },
-                {
-                    "source": "D:\\Calendar\\Calendar_back\\Etar-Calendar-master\\app\\src\\main\\res\\values-pa\\arrays.xml",
+                    "source": "D:\\Calendar\\Calendar_frontend\\Etar-Calendar-master\\app\\src\\main\\res\\values-pa\\arrays.xml",
                     "from": {
                         "startLines": "44,19",
                         "startColumns": "2,2",
@@ -40,7 +23,24 @@
                     }
                 },
                 {
-                    "source": "D:\\Calendar\\Calendar_back\\Etar-Calendar-master\\app\\src\\main\\res\\values-pa\\strings.xml",
+                    "source": "C:\\Users\\86137\\.gradle\\caches\\transforms-4\\30cf0bd4f0d2fb592315ffff5daa984a\\transformed\\core-1.13.1\\res\\values-pa\\values-pa.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,153,255,358,459,561,659,788",
+                        "endColumns": "97,101,102,100,101,97,128,100",
+                        "endOffsets": "148,250,353,454,556,654,783,884"
+                    },
+                    "to": {
+                        "startLines": "100,101,102,103,104,105,106,242",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "6793,6891,6993,7096,7197,7299,7397,17755",
+                        "endColumns": "97,101,102,100,101,97,128,100",
+                        "endOffsets": "6886,6988,7091,7192,7294,7392,7521,17851"
+                    }
+                },
+                {
+                    "source": "D:\\Calendar\\Calendar_frontend\\Etar-Calendar-master\\app\\src\\main\\res\\values-pa\\strings.xml",
                     "from": {
                         "startLines": "31,35,39,43,77,27,91,90,89,73,24,65,54,26,94,93,95,87,88,66,3,71,48,23,92,60,59,72,19,17,18,62,61,20,63,64,75,14,15,11,4,5,81,7,6,76,13,21,86,74,83,55,47,84,58,57,56,69,67,68,2,70,12,82,8,16,10,25,52,50,51,49,9,22,53",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",

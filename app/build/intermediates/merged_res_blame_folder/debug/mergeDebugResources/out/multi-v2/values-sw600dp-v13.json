@@ -14,7 +14,7 @@
                     }
                 },
                 {
-                    "source": "D:\\Calendar\\Calendar_back\\Etar-Calendar-master\\app\\src\\main\\res\\values-sw600dp\\dimens.xml",
+                    "source": "D:\\Calendar\\Calendar_frontend\\Etar-Calendar-master\\app\\src\\main\\res\\values-sw600dp\\dimens.xml",
                     "from": {
                         "startLines": "19,20,21,18,23,24",
                         "startColumns": "4,4,4,4,4,4",

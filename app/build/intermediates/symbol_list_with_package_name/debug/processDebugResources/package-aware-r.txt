@@ -4404,6 +4404,7 @@ id bounceEnd
 id bounceStart
 id btnCallGnn
 id btnPickImage
+id btn_smart_input
 id bubble_layout
 id buttonPanel
 id button_date

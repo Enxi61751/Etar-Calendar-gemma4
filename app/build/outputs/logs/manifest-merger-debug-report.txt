@@ -1,29 +1,29 @@
 -- Merging decision tree log ---
 provider#androidx.core.content.FileProvider
-INJECTED from D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:203:9-211:20
+INJECTED from D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\AndroidManifest.xml:206:9-214:20
 	android:grantUriPermissions
-		ADDED from D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:207:13-47
+		ADDED from D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\AndroidManifest.xml:210:13-47
 	android:authorities
-		INJECTED from D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml
-		ADDED from D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:205:13-60
+		INJECTED from D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\AndroidManifest.xml
+		ADDED from D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\AndroidManifest.xml:208:13-60
 	android:exported
-		ADDED from D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:206:13-37
+		ADDED from D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\AndroidManifest.xml:209:13-37
 	android:name
-		ADDED from D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:204:13-62
+		ADDED from D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\AndroidManifest.xml:207:13-62
 provider#com.android.calendar.CalendarRecentSuggestionsProvider
-INJECTED from D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:213:9-215:88
+INJECTED from D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\AndroidManifest.xml:216:9-218:88
 	android:authorities
-		INJECTED from D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml
-		ADDED from D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:215:13-85
+		INJECTED from D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\AndroidManifest.xml
+		ADDED from D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\AndroidManifest.xml:218:13-85
 	android:exported
-		ADDED from D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:214:13-37
+		ADDED from D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\AndroidManifest.xml:217:13-37
 	android:name
-		ADDED from D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:213:19-88
+		ADDED from D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\AndroidManifest.xml:216:19-88
 manifest
-ADDED from D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:20:1-316:12
-INJECTED from D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:20:1-316:12
-INJECTED from D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:20:1-316:12
-INJECTED from D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:20:1-316:12
+ADDED from D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\AndroidManifest.xml:20:1-319:12
+INJECTED from D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\AndroidManifest.xml:20:1-319:12
+INJECTED from D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\AndroidManifest.xml:20:1-319:12
+INJECTED from D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\AndroidManifest.xml:20:1-319:12
 MERGED from [androidx.databinding:viewbinding:8.5.2] C:\Users\86137\.gradle\caches\transforms-4\fa7b30e3be65f6cd2414670288bc06e1\transformed\viewbinding-8.5.2\AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.preference:preference-ktx:1.2.1] C:\Users\86137\.gradle\caches\transforms-4\3a96b00dce80a137a26e8846b4b92b4a\transformed\preference-ktx-1.2.1\AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.android.material:material:1.13.0] C:\Users\86137\.gradle\caches\transforms-4\038073adba12f0c30b65fd5055dc38de\transformed\material-1.13.0\AndroidManifest.xml:17:1-24:12
@@ -85,108 +85,124 @@ MERGED from [org.tensorflow:tensorflow-lite-support-api:0.4.4] C:\Users\86137\.g
 MERGED from [org.tensorflow:tensorflow-lite-api:2.16.1] C:\Users\86137\.gradle\caches\transforms-4\56039392e0c62b72a3c71a5a1661ceba\transformed\tensorflow-lite-api-2.16.1\AndroidManifest.xml:2:1-11:12
 MERGED from [com.google.android.odml:image:1.0.0-beta1] C:\Users\86137\.gradle\caches\transforms-4\093852da6eb1fd1408e68118cbc2b448\transformed\image-1.0.0-beta1\AndroidManifest.xml:2:1-9:12
 	package
-		INJECTED from D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml
+		INJECTED from D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\AndroidManifest.xml
 	android:versionName
-		INJECTED from D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml
+		INJECTED from D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\AndroidManifest.xml
 	android:versionCode
-		INJECTED from D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml
+		INJECTED from D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\AndroidManifest.xml
 	xmlns:android
-		ADDED from D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:20:11-69
+		ADDED from D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\AndroidManifest.xml:20:11-69
 	android:installLocation
-		ADDED from D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:21:5-35
+		ADDED from D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\AndroidManifest.xml:21:5-35
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
-ADDED from D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:23:5-81
+ADDED from D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\AndroidManifest.xml:23:5-81
 	android:name
-		ADDED from D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:23:22-78
+		ADDED from D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\AndroidManifest.xml:23:22-78
 uses-permission#android.permission.GET_ACCOUNTS
-ADDED from D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:24:5-71
+ADDED from D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\AndroidManifest.xml:24:5-71
 	android:name
-		ADDED from D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:24:22-68
+		ADDED from D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\AndroidManifest.xml:24:22-68
 uses-permission#android.permission.VIBRATE
-ADDED from D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:25:5-65
+ADDED from D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\AndroidManifest.xml:25:5-65
 	android:name
-		ADDED from D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:25:22-63
+		ADDED from D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\AndroidManifest.xml:25:22-63
 uses-permission#android.permission.READ_CONTACTS
-ADDED from D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:26:5-71
+ADDED from D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\AndroidManifest.xml:26:5-71
 	android:name
-		ADDED from D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:26:22-69
+		ADDED from D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\AndroidManifest.xml:26:22-69
 uses-permission#android.permission.READ_CALENDAR
-ADDED from D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:27:5-72
+ADDED from D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\AndroidManifest.xml:27:5-72
 	android:name
-		ADDED from D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:27:22-69
+		ADDED from D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\AndroidManifest.xml:27:22-69
 uses-permission#android.permission.WRITE_CALENDAR
-ADDED from D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:28:5-73
+ADDED from D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\AndroidManifest.xml:28:5-73
 	android:name
-		ADDED from D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:28:22-70
+		ADDED from D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\AndroidManifest.xml:28:22-70
 uses-permission#android.permission.WAKE_LOCK
-ADDED from D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:29:5-68
+ADDED from D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\AndroidManifest.xml:29:5-68
 	android:name
-		ADDED from D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:29:22-65
+		ADDED from D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\AndroidManifest.xml:29:22-65
 uses-permission#android.permission.READ_SYNC_SETTINGS
-ADDED from D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:30:5-77
+ADDED from D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\AndroidManifest.xml:30:5-77
 	android:name
-		ADDED from D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:30:22-74
+		ADDED from D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\AndroidManifest.xml:30:22-74
 uses-permission#android.permission.FOREGROUND_SERVICE
-ADDED from D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:31:5-77
+ADDED from D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\AndroidManifest.xml:31:5-77
 	android:name
-		ADDED from D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:31:22-74
+		ADDED from D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\AndroidManifest.xml:31:22-74
 uses-permission#android.permission.FOREGROUND_SERVICE_SYSTEM_EXEMPTED
-ADDED from D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:32:5-93
+ADDED from D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\AndroidManifest.xml:32:5-93
 	android:name
-		ADDED from D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:32:22-90
+		ADDED from D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\AndroidManifest.xml:32:22-90
 uses-permission#android.permission.SCHEDULE_EXACT_ALARM
-ADDED from D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:33:5-79
+ADDED from D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\AndroidManifest.xml:33:5-79
 	android:name
-		ADDED from D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:33:22-76
+		ADDED from D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\AndroidManifest.xml:33:22-76
 uses-permission#android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS
-ADDED from D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:34:5-94
+ADDED from D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\AndroidManifest.xml:34:5-94
 	android:name
-		ADDED from D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:34:22-92
+		ADDED from D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\AndroidManifest.xml:34:22-92
 uses-permission#android.permission.POST_NOTIFICATIONS
-ADDED from D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:35:5-76
+ADDED from D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\AndroidManifest.xml:35:5-76
 	android:name
-		ADDED from D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:35:22-74
+		ADDED from D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\AndroidManifest.xml:35:22-74
 uses-permission#android.permission.INTERNET
-ADDED from D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:36:5-67
+ADDED from D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\AndroidManifest.xml:36:5-67
 	android:name
-		ADDED from D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:36:22-64
+		ADDED from D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\AndroidManifest.xml:36:22-64
+uses-permission#android.permission.RECORD_AUDIO
+ADDED from D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\AndroidManifest.xml:37:5-71
+	android:name
+		ADDED from D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\AndroidManifest.xml:37:22-68
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\AndroidManifest.xml:38:5-80
+	android:name
+		ADDED from D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\AndroidManifest.xml:38:22-77
+uses-permission#android.permission.READ_MEDIA_IMAGES
+ADDED from D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\AndroidManifest.xml:39:5-76
+	android:name
+		ADDED from D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\AndroidManifest.xml:39:22-73
+uses-permission#android.permission.READ_MEDIA_AUDIO
+ADDED from D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\AndroidManifest.xml:40:5-75
+	android:name
+		ADDED from D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\AndroidManifest.xml:40:22-72
 queries
-ADDED from D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:39:5-55:15
+ADDED from D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\AndroidManifest.xml:42:5-58:15
 MERGED from [androidx.test:runner:1.7.0] C:\Users\86137\.gradle\caches\transforms-4\336228aacab96557f9b50cd1fa1fcffe\transformed\runner-1.7.0\AndroidManifest.xml:24:5-28:15
 MERGED from [androidx.test:runner:1.7.0] C:\Users\86137\.gradle\caches\transforms-4\336228aacab96557f9b50cd1fa1fcffe\transformed\runner-1.7.0\AndroidManifest.xml:24:5-28:15
 intent#action:name:android.content.SyncAdapter
-ADDED from D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:40:9-42:18
+ADDED from D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\AndroidManifest.xml:43:9-45:18
 action#android.content.SyncAdapter
-ADDED from D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:41:13-66
+ADDED from D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\AndroidManifest.xml:44:13-66
 	android:name
-		ADDED from D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:41:21-63
+		ADDED from D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\AndroidManifest.xml:44:21-63
 intent#action:name:android.intent.action.VIEW+category:name:android.intent.category.BROWSABLE+data:scheme:http
-ADDED from D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:44:9-48:18
+ADDED from D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\AndroidManifest.xml:47:9-51:18
 action#android.intent.action.VIEW
-ADDED from D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:45:13-65
+ADDED from D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\AndroidManifest.xml:48:13-65
 	android:name
-		ADDED from D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:45:21-62
+		ADDED from D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\AndroidManifest.xml:48:21-62
 category#android.intent.category.BROWSABLE
-ADDED from D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:46:13-74
+ADDED from D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\AndroidManifest.xml:49:13-74
 	android:name
-		ADDED from D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:46:23-71
+		ADDED from D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\AndroidManifest.xml:49:23-71
 data
-ADDED from D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:47:13-43
+ADDED from D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\AndroidManifest.xml:50:13-43
 	android:host
-		ADDED from D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:82:23-58
+		ADDED from D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\AndroidManifest.xml:85:23-58
 	android:scheme
-		ADDED from D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:47:19-40
+		ADDED from D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\AndroidManifest.xml:50:19-40
 	android:pathPattern
-		ADDED from D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:157:21-68
+		ADDED from D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\AndroidManifest.xml:160:21-68
 	android:mimeType
-		ADDED from D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:81:23-52
+		ADDED from D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\AndroidManifest.xml:84:23-52
 	android:pathPrefix
-		ADDED from D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:149:21-57
+		ADDED from D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\AndroidManifest.xml:152:21-57
 intent#action:name:android.intent.action.VIEW+category:name:android.intent.category.BROWSABLE+data:scheme:https
-ADDED from D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:50:9-54:18
+ADDED from D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\AndroidManifest.xml:53:9-57:18
 application
-ADDED from D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:57:5-315:19
-INJECTED from D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:57:5-315:19
+ADDED from D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\AndroidManifest.xml:60:5-318:19
+INJECTED from D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\AndroidManifest.xml:60:5-318:19
 MERGED from [com.google.android.material:material:1.13.0] C:\Users\86137\.gradle\caches\transforms-4\038073adba12f0c30b65fd5055dc38de\transformed\material-1.13.0\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.13.0] C:\Users\86137\.gradle\caches\transforms-4\038073adba12f0c30b65fd5055dc38de\transformed\material-1.13.0\AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.2.1] C:\Users\86137\.gradle\caches\transforms-4\7e411725419a7f1313a200440f5351ba\transformed\constraintlayout-2.2.1\AndroidManifest.xml:7:5-20
@@ -214,345 +230,345 @@ MERGED from [org.tensorflow:tensorflow-lite-api:2.16.1] C:\Users\86137\.gradle\c
 MERGED from [com.google.android.odml:image:1.0.0-beta1] C:\Users\86137\.gradle\caches\transforms-4\093852da6eb1fd1408e68118cbc2b448\transformed\image-1.0.0-beta1\AndroidManifest.xml:7:5-20
 MERGED from [com.google.android.odml:image:1.0.0-beta1] C:\Users\86137\.gradle\caches\transforms-4\093852da6eb1fd1408e68118cbc2b448\transformed\image-1.0.0-beta1\AndroidManifest.xml:7:5-20
 	android:requiredAccountType
-		ADDED from D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:63:9-40
+		ADDED from D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\AndroidManifest.xml:66:9-40
 	android:extractNativeLibs
-		INJECTED from D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml
+		INJECTED from D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\AndroidManifest.xml
 	android:requestLegacyExternalStorage
-		ADDED from D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:58:9-52
+		ADDED from D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\AndroidManifest.xml:61:9-52
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.13.1] C:\Users\86137\.gradle\caches\transforms-4\30cf0bd4f0d2fb592315ffff5daa984a\transformed\core-1.13.1\AndroidManifest.xml:28:18-86
 	android:label
-		ADDED from D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:61:9-53
+		ADDED from D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\AndroidManifest.xml:64:9-53
 	android:hardwareAccelerated
-		ADDED from D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:59:9-43
+		ADDED from D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\AndroidManifest.xml:62:9-43
 	android:icon
-		ADDED from D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:60:9-43
+		ADDED from D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\AndroidManifest.xml:63:9-43
 	android:theme
-		ADDED from D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:65:9-42
+		ADDED from D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\AndroidManifest.xml:68:9-42
 	android:taskAffinity
-		ADDED from D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:62:9-49
+		ADDED from D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\AndroidManifest.xml:65:9-49
 	android:usesCleartextTraffic
-		ADDED from D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:64:9-45
+		ADDED from D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\AndroidManifest.xml:67:9-44
 	android:name
-		ADDED from D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:57:18-73
+		ADDED from D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\AndroidManifest.xml:60:18-73
 activity#com.android.calendar.AllInOneActivity
-ADDED from D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:67:9-89:20
+ADDED from D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\AndroidManifest.xml:70:9-92:20
 	android:launchMode
-		ADDED from D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:70:13-44
+		ADDED from D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\AndroidManifest.xml:73:13-44
 	android:windowSoftInputMode
-		ADDED from D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:71:13-52
+		ADDED from D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\AndroidManifest.xml:74:13-52
 	android:exported
-		ADDED from D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:69:13-36
+		ADDED from D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\AndroidManifest.xml:72:13-36
 	android:name
-		ADDED from D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:68:13-65
+		ADDED from D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\AndroidManifest.xml:71:13-65
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.APP_CALENDAR+category:name:android.intent.category.DEFAULT+category:name:android.intent.category.LAUNCHER
-ADDED from D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:72:13-77:29
+ADDED from D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\AndroidManifest.xml:75:13-80:29
 action#android.intent.action.MAIN
-ADDED from D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:73:17-69
+ADDED from D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\AndroidManifest.xml:76:17-69
 	android:name
-		ADDED from D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:73:25-66
+		ADDED from D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\AndroidManifest.xml:76:25-66
 category#android.intent.category.DEFAULT
-ADDED from D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:74:17-76
+ADDED from D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\AndroidManifest.xml:77:17-76
 	android:name
-		ADDED from D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:74:27-73
+		ADDED from D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\AndroidManifest.xml:77:27-73
 category#android.intent.category.LAUNCHER
-ADDED from D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:75:17-77
+ADDED from D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\AndroidManifest.xml:78:17-77
 	android:name
-		ADDED from D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:75:27-74
+		ADDED from D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\AndroidManifest.xml:78:27-74
 category#android.intent.category.APP_CALENDAR
-ADDED from D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:76:17-81
+ADDED from D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\AndroidManifest.xml:79:17-81
 	android:name
-		ADDED from D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:76:27-78
+		ADDED from D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\AndroidManifest.xml:79:27-78
 intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.DEFAULT+data:host:com.android.calendar+data:mimeType:time/epoch+data:scheme:content
-ADDED from D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:78:13-84:29
+ADDED from D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\AndroidManifest.xml:81:13-87:29
 meta-data#android.app.shortcuts
-ADDED from D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:86:13-87:53
+ADDED from D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\AndroidManifest.xml:89:13-90:53
 	android:resource
-		ADDED from D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:87:17-50
+		ADDED from D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\AndroidManifest.xml:90:17-50
 	android:name
-		ADDED from D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:86:24-60
+		ADDED from D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\AndroidManifest.xml:89:24-60
 activity-alias#com.android.calendar.LaunchActivity
-ADDED from D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:91:9-94:26
+ADDED from D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\AndroidManifest.xml:94:9-97:26
 	android:exported
-		ADDED from D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:92:13-36
+		ADDED from D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\AndroidManifest.xml:95:13-36
 	android:targetActivity
-		ADDED from D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:93:13-75
+		ADDED from D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\AndroidManifest.xml:96:13-75
 	android:name
-		ADDED from D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:91:25-75
+		ADDED from D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\AndroidManifest.xml:94:25-75
 activity#com.android.calendar.AboutActivity
-ADDED from D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:96:9-97:20
+ADDED from D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\AndroidManifest.xml:99:9-100:20
 	android:name
-		ADDED from D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:96:19-68
+		ADDED from D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\AndroidManifest.xml:99:19-68
 activity#com.android.calendar.EventInfoActivity
-ADDED from D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:99:9-111:20
+ADDED from D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\AndroidManifest.xml:102:9-114:20
 	android:parentActivityName
-		ADDED from D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:101:13-79
+		ADDED from D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\AndroidManifest.xml:104:13-79
 	android:exported
-		ADDED from D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:100:13-36
+		ADDED from D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\AndroidManifest.xml:103:13-36
 	android:name
-		ADDED from D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:99:19-72
+		ADDED from D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\AndroidManifest.xml:102:19-72
 intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.DEFAULT
-ADDED from D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:102:13-105:29
+ADDED from D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\AndroidManifest.xml:105:13-108:29
 intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.DEFAULT+data:mimeType:vnd.android.cursor.item/event
-ADDED from D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:106:13-110:29
+ADDED from D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\AndroidManifest.xml:109:13-113:29
 activity#com.android.calendar.event.EditEventActivity
-ADDED from D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:113:9-115:20
+ADDED from D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\AndroidManifest.xml:116:9-118:20
 	android:configChanges
-		ADDED from D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:114:13-74
+		ADDED from D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\AndroidManifest.xml:117:13-74
 	android:name
-		ADDED from D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:113:19-78
+		ADDED from D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\AndroidManifest.xml:116:19-78
 activity-alias#com.android.calendar.EditEventActivity
-ADDED from D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:117:9-132:26
+ADDED from D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\AndroidManifest.xml:120:9-135:26
 	android:exported
-		ADDED from D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:118:13-36
+		ADDED from D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\AndroidManifest.xml:121:13-36
 	android:targetActivity
-		ADDED from D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:119:13-82
+		ADDED from D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\AndroidManifest.xml:122:13-82
 	android:name
-		ADDED from D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:117:25-78
+		ADDED from D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\AndroidManifest.xml:120:25-78
 intent-filter#action:name:android.intent.action.EDIT+action:name:android.intent.action.INSERT+category:name:android.intent.category.DEFAULT+data:mimeType:vnd.android.cursor.item/event
-ADDED from D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:120:13-125:29
+ADDED from D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\AndroidManifest.xml:123:13-128:29
 action#android.intent.action.EDIT
-ADDED from D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:121:17-69
+ADDED from D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\AndroidManifest.xml:124:17-69
 	android:name
-		ADDED from D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:121:25-66
+		ADDED from D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\AndroidManifest.xml:124:25-66
 action#android.intent.action.INSERT
-ADDED from D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:122:17-71
+ADDED from D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\AndroidManifest.xml:125:17-71
 	android:name
-		ADDED from D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:122:25-68
+		ADDED from D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\AndroidManifest.xml:125:25-68
 intent-filter#action:name:android.intent.action.EDIT+action:name:android.intent.action.INSERT+category:name:android.intent.category.DEFAULT+data:mimeType:vnd.android.cursor.dir/event
-ADDED from D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:126:13-131:29
+ADDED from D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\AndroidManifest.xml:129:13-134:29
 activity#com.android.calendar.GoogleCalendarUriIntentFilter
-ADDED from D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:134:9-164:20
+ADDED from D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\AndroidManifest.xml:137:9-167:20
 	android:label
-		ADDED from D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:138:13-46
+		ADDED from D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\AndroidManifest.xml:141:13-46
 	android:exported
-		ADDED from D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:136:13-36
+		ADDED from D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\AndroidManifest.xml:139:13-36
 	android:configChanges
-		ADDED from D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:137:13-63
+		ADDED from D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\AndroidManifest.xml:140:13-63
 	android:theme
-		ADDED from D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:139:13-59
+		ADDED from D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\AndroidManifest.xml:142:13-59
 	android:name
-		ADDED from D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:135:13-78
+		ADDED from D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\AndroidManifest.xml:138:13-78
 intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.BROWSABLE+category:name:android.intent.category.DEFAULT+data:host:www.google.com+data:host:www.google.com+data:host:www.google.com+data:host:www.google.com+data:pathPattern:/calendar/hosted/.*/event+data:pathPattern:/calendar/hosted/.*/event+data:pathPrefix:/calendar/event+data:pathPrefix:/calendar/event+data:scheme:http+data:scheme:http+data:scheme:https+data:scheme:https
-ADDED from D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:141:13-163:29
+ADDED from D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\AndroidManifest.xml:144:13-166:29
 	android:priority
-		ADDED from D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:142:16-37
+		ADDED from D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\AndroidManifest.xml:145:17-38
 activity#com.android.calendar.settings.SettingsActivity
-ADDED from D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:166:9-169:82
+ADDED from D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\AndroidManifest.xml:169:9-172:82
 	android:parentActivityName
-		ADDED from D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:169:13-79
+		ADDED from D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\AndroidManifest.xml:172:13-79
 	android:label
-		ADDED from D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:168:13-54
+		ADDED from D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\AndroidManifest.xml:171:13-54
 	android:name
-		ADDED from D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:167:13-74
+		ADDED from D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\AndroidManifest.xml:170:13-74
 meta-data#android.app.default_searchable
-ADDED from D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:173:9-174:66
+ADDED from D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\AndroidManifest.xml:176:9-177:66
 	android:value
-		ADDED from D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:174:13-64
+		ADDED from D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\AndroidManifest.xml:177:13-64
 	android:name
-		ADDED from D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:173:20-65
+		ADDED from D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\AndroidManifest.xml:176:20-65
 activity#com.android.calendar.SearchActivity
-ADDED from D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:176:9-186:20
+ADDED from D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\AndroidManifest.xml:179:9-189:20
 	android:label
-		ADDED from D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:179:13-49
+		ADDED from D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\AndroidManifest.xml:182:13-49
 	android:launchMode
-		ADDED from D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:180:13-43
+		ADDED from D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\AndroidManifest.xml:183:13-43
 	android:windowSoftInputMode
-		ADDED from D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:181:13-60
+		ADDED from D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\AndroidManifest.xml:184:13-60
 	android:exported
-		ADDED from D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:178:13-36
+		ADDED from D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\AndroidManifest.xml:181:13-36
 	android:name
-		ADDED from D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:177:13-63
+		ADDED from D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\AndroidManifest.xml:180:13-63
 intent-filter#action:name:android.intent.action.SEARCH
-ADDED from D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:182:13-184:29
+ADDED from D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\AndroidManifest.xml:185:13-187:29
 action#android.intent.action.SEARCH
-ADDED from D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:183:17-70
+ADDED from D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\AndroidManifest.xml:186:17-70
 	android:name
-		ADDED from D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:183:25-68
+		ADDED from D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\AndroidManifest.xml:186:25-68
 meta-data#android.app.searchable
-ADDED from D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:185:13-98
+ADDED from D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\AndroidManifest.xml:188:13-98
 	android:resource
-		ADDED from D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:185:62-96
+		ADDED from D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\AndroidManifest.xml:188:62-96
 	android:name
-		ADDED from D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:185:24-61
+		ADDED from D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\AndroidManifest.xml:188:24-61
 activity#com.android.calendar.ImportActivity
-ADDED from D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:188:9-201:20
+ADDED from D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\AndroidManifest.xml:191:9-204:20
 	android:launchMode
-		ADDED from D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:191:13-43
+		ADDED from D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\AndroidManifest.xml:194:13-43
 	android:exported
-		ADDED from D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:189:13-36
+		ADDED from D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\AndroidManifest.xml:192:13-36
 	android:theme
-		ADDED from D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:190:13-59
+		ADDED from D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\AndroidManifest.xml:193:13-59
 	android:name
-		ADDED from D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:188:19-69
+		ADDED from D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\AndroidManifest.xml:191:19-69
 intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.DEFAULT+data:mimeType:application/ics+data:mimeType:text/calendar+data:mimeType:text/x-vcalendar+data:scheme:content+data:scheme:file
-ADDED from D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:192:14-200:29
+ADDED from D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\AndroidManifest.xml:195:13-203:29
 activity#com.android.calendar.alerts.AlertActivity
-ADDED from D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:218:9-222:64
+ADDED from D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\AndroidManifest.xml:221:9-225:64
 	android:excludeFromRecents
-		ADDED from D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:220:13-46
+		ADDED from D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\AndroidManifest.xml:223:13-46
 	android:launchMode
-		ADDED from D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:221:13-48
+		ADDED from D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\AndroidManifest.xml:224:13-48
 	android:theme
-		ADDED from D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:222:13-61
+		ADDED from D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\AndroidManifest.xml:225:13-61
 	android:name
-		ADDED from D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:219:13-69
+		ADDED from D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\AndroidManifest.xml:222:13-69
 activity#com.android.calendar.alerts.QuickResponseActivity
-ADDED from D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:224:9-229:64
+ADDED from D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\AndroidManifest.xml:227:9-232:64
 	android:label
-		ADDED from D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:227:13-64
+		ADDED from D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\AndroidManifest.xml:230:13-64
 	android:excludeFromRecents
-		ADDED from D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:226:13-46
+		ADDED from D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\AndroidManifest.xml:229:13-46
 	android:launchMode
-		ADDED from D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:228:13-48
+		ADDED from D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\AndroidManifest.xml:231:13-48
 	android:theme
-		ADDED from D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:229:13-61
+		ADDED from D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\AndroidManifest.xml:232:13-61
 	android:name
-		ADDED from D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:225:13-77
+		ADDED from D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\AndroidManifest.xml:228:13-77
 activity#com.android.calendar.alerts.SnoozeDelayActivity
-ADDED from D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:231:9-235:64
+ADDED from D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\AndroidManifest.xml:234:9-238:64
 	android:excludeFromRecents
-		ADDED from D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:233:13-46
+		ADDED from D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\AndroidManifest.xml:236:13-46
 	android:launchMode
-		ADDED from D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:234:13-48
+		ADDED from D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\AndroidManifest.xml:237:13-48
 	android:theme
-		ADDED from D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:235:13-61
+		ADDED from D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\AndroidManifest.xml:238:13-61
 	android:name
-		ADDED from D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:232:13-75
+		ADDED from D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\AndroidManifest.xml:235:13-75
 receiver#com.android.calendar.alerts.AlertReceiver
-ADDED from D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:237:9-252:20
+ADDED from D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\AndroidManifest.xml:240:9-255:20
 	android:exported
-		ADDED from D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:238:13-36
+		ADDED from D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\AndroidManifest.xml:241:13-36
 	android:name
-		ADDED from D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:237:19-75
+		ADDED from D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\AndroidManifest.xml:240:19-75
 intent-filter#action:name:android.intent.action.EVENT_REMINDER+action:name:android.intent.action.TIME_SET+data:scheme:content
-ADDED from D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:239:13-243:29
+ADDED from D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\AndroidManifest.xml:242:13-246:29
 action#android.intent.action.EVENT_REMINDER
-ADDED from D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:240:17-79
+ADDED from D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\AndroidManifest.xml:243:17-79
 	android:name
-		ADDED from D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:240:25-76
+		ADDED from D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\AndroidManifest.xml:243:25-76
 action#android.intent.action.TIME_SET
-ADDED from D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:241:17-73
+ADDED from D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\AndroidManifest.xml:244:17-73
 	android:name
-		ADDED from D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:241:25-70
+		ADDED from D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\AndroidManifest.xml:244:25-70
 intent-filter#action:name:android.intent.action.LOCALE_CHANGED
-ADDED from D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:244:13-246:29
+ADDED from D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\AndroidManifest.xml:247:13-249:29
 action#android.intent.action.LOCALE_CHANGED
-ADDED from D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:245:17-79
+ADDED from D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\AndroidManifest.xml:248:17-79
 	android:name
-		ADDED from D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:245:25-76
+		ADDED from D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\AndroidManifest.xml:248:25-76
 intent-filter#action:name:android.intent.action.PROVIDER_CHANGED+data:host:com.android.calendar+data:scheme:content
-ADDED from D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:247:13-251:29
+ADDED from D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\AndroidManifest.xml:250:13-254:29
 action#android.intent.action.PROVIDER_CHANGED
-ADDED from D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:248:17-80
+ADDED from D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\AndroidManifest.xml:251:17-80
 	android:name
-		ADDED from D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:248:25-78
+		ADDED from D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\AndroidManifest.xml:251:25-78
 receiver#com.android.calendar.UpgradeReceiver
-ADDED from D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:254:9-263:20
+ADDED from D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\AndroidManifest.xml:257:9-266:20
 	android:exported
-		ADDED from D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:255:13-36
+		ADDED from D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\AndroidManifest.xml:258:13-36
 	android:name
-		ADDED from D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:254:19-70
+		ADDED from D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\AndroidManifest.xml:257:19-70
 intent-filter#action:name:android.intent.action.BOOT_COMPLETED+category:name:android.intent.category.DEFAULT
-ADDED from D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:256:13-259:29
+ADDED from D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\AndroidManifest.xml:259:13-262:29
 action#android.intent.action.BOOT_COMPLETED
-ADDED from D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:257:17-79
+ADDED from D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\AndroidManifest.xml:260:17-79
 	android:name
-		ADDED from D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:257:25-76
+		ADDED from D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\AndroidManifest.xml:260:25-76
 intent-filter#action:name:android.intent.action.MY_PACKAGE_REPLACED
-ADDED from D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:260:13-262:29
+ADDED from D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\AndroidManifest.xml:263:13-265:29
 action#android.intent.action.MY_PACKAGE_REPLACED
-ADDED from D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:261:17-84
+ADDED from D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\AndroidManifest.xml:264:17-84
 	android:name
-		ADDED from D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:261:25-81
+		ADDED from D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\AndroidManifest.xml:264:25-81
 service#com.android.calendar.alerts.AlertService
-ADDED from D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:265:9-267:62
+ADDED from D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\AndroidManifest.xml:268:9-270:62
 	android:exported
-		ADDED from D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:266:13-37
+		ADDED from D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\AndroidManifest.xml:269:13-37
 	android:foregroundServiceType
-		ADDED from D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:267:13-59
+		ADDED from D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\AndroidManifest.xml:270:13-59
 	android:name
-		ADDED from D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:265:18-73
+		ADDED from D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\AndroidManifest.xml:268:18-73
 service#com.android.calendar.alerts.DismissAlarmsService
-ADDED from D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:269:9-84
+ADDED from D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\AndroidManifest.xml:272:9-84
 	android:name
-		ADDED from D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:269:18-81
+		ADDED from D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\AndroidManifest.xml:272:18-81
 service#com.android.calendar.alerts.SnoozeAlarmsService
-ADDED from D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:271:9-83
+ADDED from D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\AndroidManifest.xml:274:9-83
 	android:name
-		ADDED from D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:271:18-80
+		ADDED from D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\AndroidManifest.xml:274:18-80
 receiver#com.android.calendar.widget.CalendarAppWidgetProvider
-ADDED from D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:274:9-281:20
+ADDED from D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\AndroidManifest.xml:277:9-284:20
 	android:exported
-		ADDED from D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:275:13-36
+		ADDED from D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\AndroidManifest.xml:278:13-36
 	android:name
-		ADDED from D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:274:19-87
+		ADDED from D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\AndroidManifest.xml:277:19-87
 intent-filter#action:name:android.appwidget.action.APPWIDGET_UPDATE+action:name:com.android.calendar.APPWIDGET_UPDATE
-ADDED from D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:276:13-279:29
+ADDED from D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\AndroidManifest.xml:279:13-282:29
 action#android.appwidget.action.APPWIDGET_UPDATE
-ADDED from D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:277:17-84
+ADDED from D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\AndroidManifest.xml:280:17-84
 	android:name
-		ADDED from D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:277:25-81
+		ADDED from D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\AndroidManifest.xml:280:25-81
 action#com.android.calendar.APPWIDGET_UPDATE
-ADDED from D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:278:17-80
+ADDED from D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\AndroidManifest.xml:281:17-80
 	android:name
-		ADDED from D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:278:25-77
+		ADDED from D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\AndroidManifest.xml:281:25-77
 meta-data#android.appwidget.provider
-ADDED from D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:280:13-107
+ADDED from D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\AndroidManifest.xml:283:13-107
 	android:resource
-		ADDED from D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:280:66-104
+		ADDED from D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\AndroidManifest.xml:283:66-104
 	android:name
-		ADDED from D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:280:24-65
+		ADDED from D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\AndroidManifest.xml:283:24-65
 receiver#com.android.calendar.widget.CalendarAppWidgetService$CalendarFactory
-ADDED from D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:283:9-302:20
+ADDED from D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\AndroidManifest.xml:286:9-305:20
 	android:exported
-		ADDED from D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:284:13-36
+		ADDED from D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\AndroidManifest.xml:287:13-36
 	android:name
-		ADDED from D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:283:19-102
+		ADDED from D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\AndroidManifest.xml:286:19-102
 intent-filter#action:name:android.intent.action.DATE_CHANGED+action:name:android.intent.action.LOCALE_CHANGED+action:name:android.intent.action.TIMEZONE_CHANGED+action:name:android.intent.action.TIME_SET
-ADDED from D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:285:13-290:29
+ADDED from D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\AndroidManifest.xml:288:13-293:29
 action#android.intent.action.TIMEZONE_CHANGED
-ADDED from D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:286:17-80
+ADDED from D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\AndroidManifest.xml:289:17-80
 	android:name
-		ADDED from D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:286:25-78
+		ADDED from D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\AndroidManifest.xml:289:25-78
 action#android.intent.action.DATE_CHANGED
-ADDED from D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:287:17-76
+ADDED from D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\AndroidManifest.xml:290:17-76
 	android:name
-		ADDED from D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:287:25-74
+		ADDED from D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\AndroidManifest.xml:290:25-74
 intent-filter#action:name:com.android.calendar.APPWIDGET_SCHEDULED_UPDATE+data:host:com.android.calendar+data:mimeType:vnd.android.data/update+data:scheme:content
-ADDED from D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:296:13-301:29
+ADDED from D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\AndroidManifest.xml:299:13-304:29
 action#com.android.calendar.APPWIDGET_SCHEDULED_UPDATE
-ADDED from D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:297:17-89
+ADDED from D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\AndroidManifest.xml:300:17-89
 	android:name
-		ADDED from D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:297:25-87
+		ADDED from D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\AndroidManifest.xml:300:25-87
 service#com.android.calendar.widget.CalendarAppWidgetService
-ADDED from D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:304:9-307:19
+ADDED from D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\AndroidManifest.xml:307:9-310:19
 	android:exported
-		ADDED from D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:305:13-37
+		ADDED from D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\AndroidManifest.xml:308:13-37
 	android:permission
-		ADDED from D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:306:13-69
+		ADDED from D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\AndroidManifest.xml:309:13-69
 	android:name
-		ADDED from D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:304:18-85
+		ADDED from D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\AndroidManifest.xml:307:18-85
 service#com.android.calendar.AsyncQueryServiceHelper
-ADDED from D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:309:9-80
+ADDED from D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\AndroidManifest.xml:312:9-80
 	android:name
-		ADDED from D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:309:18-77
+		ADDED from D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\AndroidManifest.xml:312:18-77
 activity#com.android.calendar.ui.MlDebugActivity
-ADDED from D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:310:9-312:40
+ADDED from D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\AndroidManifest.xml:313:9-315:40
 	android:exported
-		ADDED from D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:312:13-37
+		ADDED from D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\AndroidManifest.xml:315:13-37
 	android:name
-		ADDED from D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:311:13-67
+		ADDED from D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\AndroidManifest.xml:314:13-67
 meta-data#android.support.FILE_PROVIDER_PATHS
-ADDED from D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:208:13-210:57
+ADDED from D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\AndroidManifest.xml:211:13-213:57
 	android:resource
-		ADDED from D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:210:17-55
+		ADDED from D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\AndroidManifest.xml:213:17-55
 	android:name
-		ADDED from D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml:209:17-67
+		ADDED from D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\AndroidManifest.xml:212:17-67
 uses-sdk
-INJECTED from D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml
-INJECTED from D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml
+INJECTED from D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\AndroidManifest.xml
+INJECTED from D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\AndroidManifest.xml
 MERGED from [androidx.databinding:viewbinding:8.5.2] C:\Users\86137\.gradle\caches\transforms-4\fa7b30e3be65f6cd2414670288bc06e1\transformed\viewbinding-8.5.2\AndroidManifest.xml:5:5-44
 MERGED from [androidx.databinding:viewbinding:8.5.2] C:\Users\86137\.gradle\caches\transforms-4\fa7b30e3be65f6cd2414670288bc06e1\transformed\viewbinding-8.5.2\AndroidManifest.xml:5:5-44
 MERGED from [androidx.preference:preference-ktx:1.2.1] C:\Users\86137\.gradle\caches\transforms-4\3a96b00dce80a137a26e8846b4b92b4a\transformed\preference-ktx-1.2.1\AndroidManifest.xml:20:5-22:41
@@ -674,9 +690,9 @@ MERGED from [org.tensorflow:tensorflow-lite-api:2.16.1] C:\Users\86137\.gradle\c
 MERGED from [com.google.android.odml:image:1.0.0-beta1] C:\Users\86137\.gradle\caches\transforms-4\093852da6eb1fd1408e68118cbc2b448\transformed\image-1.0.0-beta1\AndroidManifest.xml:5:5-44
 MERGED from [com.google.android.odml:image:1.0.0-beta1] C:\Users\86137\.gradle\caches\transforms-4\093852da6eb1fd1408e68118cbc2b448\transformed\image-1.0.0-beta1\AndroidManifest.xml:5:5-44
 	android:targetSdkVersion
-		INJECTED from D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml
+		INJECTED from D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from D:\Calendar\Calendar_back\Etar-Calendar-master\app\src\main\AndroidManifest.xml
+		INJECTED from D:\Calendar\Calendar_frontend\Etar-Calendar-master\app\src\main\AndroidManifest.xml
 provider#androidx.startup.InitializationProvider
 ADDED from [androidx.emoji2:emoji2:1.3.0] C:\Users\86137\.gradle\caches\transforms-4\aa3087217393cca5897a1baefaa4f773\transformed\emoji2-1.3.0\AndroidManifest.xml:24:9-32:20
 MERGED from [androidx.lifecycle:lifecycle-process:2.10.0] C:\Users\86137\.gradle\caches\transforms-4\65f9ebdd4df613cec4424ac4c6b6bc83\transformed\lifecycle-process-2.10.0\AndroidManifest.xml:24:9-32:20

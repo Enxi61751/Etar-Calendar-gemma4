@@ -4,7 +4,7 @@
             "outputFile": "ws.xsoh.etar.app-mergeDebugResources-42:/values-w1280dp-h752dp-v13/values-w1280dp-h752dp-v13.xml",
             "map": [
                 {
-                    "source": "D:\\Calendar\\Calendar_back\\Etar-Calendar-master\\app\\src\\main\\res\\values-w1280dp-h752dp\\dimens.xml",
+                    "source": "D:\\Calendar\\Calendar_frontend\\Etar-Calendar-master\\app\\src\\main\\res\\values-w1280dp-h752dp\\dimens.xml",
                     "from": {
                         "startLines": "16,15",
                         "startColumns": "4,4",
