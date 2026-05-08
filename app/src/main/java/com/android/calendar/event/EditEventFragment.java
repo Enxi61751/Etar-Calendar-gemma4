@@ -403,13 +403,16 @@ public class EditEventFragment extends Fragment implements EventHandler, OnColor
                         switch (which) {
                             case 0: showTextInputDialog(); break;
                             case 1:
-                                Intent imageIntent = new Intent(Intent.ACTION_PICK, android.provider.MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
-                                startActivityForResult(imageIntent, REQUEST_CODE_PICK_IMAGE);
+                                Intent imageIntent = new Intent(Intent.ACTION_GET_CONTENT);
+                                imageIntent.setType("image/*");
+                                imageIntent.addCategory(Intent.CATEGORY_OPENABLE);
+                                startActivityForResult(Intent.createChooser(imageIntent, "选择图片"), REQUEST_CODE_PICK_IMAGE);
                                 break;
                             case 2:
                                 Intent audioIntent = new Intent(Intent.ACTION_GET_CONTENT);
                                 audioIntent.setType("audio/*");
-                                startActivityForResult(audioIntent, REQUEST_CODE_PICK_AUDIO);
+                                audioIntent.addCategory(Intent.CATEGORY_OPENABLE);
+                                startActivityForResult(Intent.createChooser(audioIntent, "选择音频"), REQUEST_CODE_PICK_AUDIO);
                                 break;
                             case 3:
                                 if (ContextCompat.checkSelfPermission(getActivity(), Manifest.permission.RECORD_AUDIO) != PackageManager.PERMISSION_GRANTED) {
@@ -426,29 +429,41 @@ public class EditEventFragment extends Fragment implements EventHandler, OnColor
                 }).show();
     }
 
-    // ==== 新增：开始隐秘录音 ====
+    // ==== 新增：开始录音 ====
     private void startRecording() {
         try {
+            // 语音录入是一次新的智能输入，先清掉上一次的文字/图片，避免提交旧内容。
+            mSmartTextFile = null;
+            mSmartTextContent = "";
+            mSmartImageFile = null;
+            mSmartAudioFile = null;
+
             java.io.File folder = new java.io.File(getActivity().getFilesDir(), SMART_INPUT_FOLDER);
             if (!folder.exists()) folder.mkdirs();
 
-            // 生成隐藏文件路径，格式为 m4a
+            // 生成内部录音文件路径，格式为 m4a。
             mCurrentRecordPath = new java.io.File(folder, "voice_" + System.currentTimeMillis() + ".m4a").getAbsolutePath();
 
             mRecorder = new android.media.MediaRecorder();
-            mRecorder.setAudioSource(android.media.MediaRecorder.AudioSource.MIC);
+
+            // VOICE_RECOGNITION 更适合 ASR；如果部分模拟器/设备不支持，会在 catch 中提示。
+            mRecorder.setAudioSource(android.media.MediaRecorder.AudioSource.VOICE_RECOGNITION);
             mRecorder.setOutputFormat(android.media.MediaRecorder.OutputFormat.MPEG_4);
             mRecorder.setOutputFile(mCurrentRecordPath);
             mRecorder.setAudioEncoder(android.media.MediaRecorder.AudioEncoder.AAC);
 
+            // 关键：提高录音质量。目标是让后端看到 16kHz / mono / 较高码率，而不是 8kHz / 12kbps。
+            mRecorder.setAudioSamplingRate(16000);
+            mRecorder.setAudioEncodingBitRate(64000);
+            mRecorder.setAudioChannels(1);
+
             mRecorder.prepare();
             mRecorder.start();
 
-            // 弹出一个提示框，告诉用户正在录音，并提供“停止”按钮
             new AlertDialog.Builder(getActivity())
                     .setTitle("🎤 正在录音...")
-                    .setMessage("请描述您的日程，录音将直接保存至应用安全目录。")
-                    .setCancelable(false) // 防止用户误触外面导致对话框消失但录音没停
+                    .setMessage("请描述您的日程，录音将直接保存至应用安全目录。请尽量靠近麦克风并正常音量说话。")
+                    .setCancelable(false)
                     .setPositiveButton("⏹ 结束", new DialogInterface.OnClickListener() {
                         @Override
                         public void onClick(DialogInterface dialog, int which) {
@@ -459,7 +474,7 @@ public class EditEventFragment extends Fragment implements EventHandler, OnColor
 
         } catch (Exception e) {
             e.printStackTrace();
-            Toast.makeText(getActivity(), "录音失败，请检查麦克风是否被占用", Toast.LENGTH_SHORT).show();
+            Toast.makeText(getActivity(), "录音失败，请检查麦克风权限或是否被占用", Toast.LENGTH_SHORT).show();
             if (mRecorder != null) {
                 mRecorder.release();
                 mRecorder = null;
@@ -479,7 +494,11 @@ public class EditEventFragment extends Fragment implements EventHandler, OnColor
             mRecorder = null;
             if (mCurrentRecordPath != null) {
                 mSmartAudioFile = new File(mCurrentRecordPath);
-                Toast.makeText(getActivity(), "录音已保存，可以提交给AI解析", Toast.LENGTH_SHORT).show();
+                Log.d(TAG, "Recorded audio file: " + mSmartAudioFile.getAbsolutePath()
+                        + ", exists=" + mSmartAudioFile.exists()
+                        + ", size=" + mSmartAudioFile.length());
+                Toast.makeText(getActivity(), "录音已保存，正在提交给AI解析...", Toast.LENGTH_SHORT).show();
+                submitSmartInputToServer();
             }
         }
     }
@@ -598,9 +617,13 @@ public class EditEventFragment extends Fragment implements EventHandler, OnColor
             fos.write(content.getBytes(java.nio.charset.StandardCharsets.UTF_8));
             fos.close();
 
+            // 文字输入是一次新的智能输入，清掉上一次的图片/音频，避免提交旧内容。
             mSmartTextFile = file;
             mSmartTextContent = content;
-            Toast.makeText(getActivity(), "文字已保存，可以继续添加图片/音频或提交解析", Toast.LENGTH_SHORT).show();
+            mSmartImageFile = null;
+            mSmartAudioFile = null;
+            Toast.makeText(getActivity(), "文字已保存，正在提交给AI解析...", Toast.LENGTH_SHORT).show();
+            submitSmartInputToServer();
         } catch (java.io.IOException e) {
             e.printStackTrace();
             Toast.makeText(getActivity(), "输入失败", Toast.LENGTH_SHORT).show();
@@ -627,7 +650,7 @@ public class EditEventFragment extends Fragment implements EventHandler, OnColor
             is.close();
             fos.close();
 
-            Toast.makeText(getActivity(), "文件已保存，可以提交给AI解析", Toast.LENGTH_SHORT).show();
+            Toast.makeText(getActivity(), "文件已保存，正在提交给AI解析...", Toast.LENGTH_SHORT).show();
             return destinationFile;
         } catch (Exception e) {
             e.printStackTrace();
@@ -638,12 +661,10 @@ public class EditEventFragment extends Fragment implements EventHandler, OnColor
 
 
     private void submitSmartInputToServer() {
-        File textFile = mSmartTextFile != null ? mSmartTextFile : findLatestSmartFile("text_");
-        File imageFile = mSmartImageFile != null ? mSmartImageFile : findLatestSmartFile("image_");
-        File audioFile = mSmartAudioFile != null ? mSmartAudioFile : findLatestSmartFile("audio_");
-        if (audioFile == null) {
-            audioFile = findLatestSmartFile("voice_");
-        }
+        // 只提交本次明确选择/录入的内容，不再自动查找历史文件，避免旧文本/旧图片污染本次语音解析。
+        File textFile = mSmartTextFile;
+        File imageFile = mSmartImageFile;
+        File audioFile = mSmartAudioFile;
 
         String text = mSmartTextContent;
         if ((text == null || text.isEmpty()) && textFile != null) {
@@ -813,10 +834,31 @@ public class EditEventFragment extends Fragment implements EventHandler, OnColor
             if (selectedUri != null) {
                 switch (requestCode) {
                     case REQUEST_CODE_PICK_IMAGE:
+                        // 图片上传是一次新的智能输入，清掉上一次文字/音频。
+                        mSmartTextFile = null;
+                        mSmartTextContent = "";
+                        mSmartAudioFile = null;
                         mSmartImageFile = copyUriContentToInternalFolder(selectedUri, "image", ".jpg");
+                        if (mSmartImageFile != null) {
+                            Log.d(TAG, "Selected image file: " + mSmartImageFile.getAbsolutePath()
+                                    + ", exists=" + mSmartImageFile.exists()
+                                    + ", size=" + mSmartImageFile.length());
+                            submitSmartInputToServer();
+                        }
                         break;
                     case REQUEST_CODE_PICK_AUDIO:
-                        mSmartAudioFile = copyUriContentToInternalFolder(selectedUri, "audio", ".mp3");
+                        // 音频上传是一次新的智能输入，清掉上一次文字/图片。
+                        mSmartTextFile = null;
+                        mSmartTextContent = "";
+                        mSmartImageFile = null;
+                        // 不要强行保存为 mp3。安卓/录音文件常见是 m4a/aac，使用 m4a 后缀更稳。
+                        mSmartAudioFile = copyUriContentToInternalFolder(selectedUri, "audio", ".m4a");
+                        if (mSmartAudioFile != null) {
+                            Log.d(TAG, "Selected audio file: " + mSmartAudioFile.getAbsolutePath()
+                                    + ", exists=" + mSmartAudioFile.exists()
+                                    + ", size=" + mSmartAudioFile.length());
+                            submitSmartInputToServer();
+                        }
                         break;
                 }
             }
